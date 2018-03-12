@@ -127,27 +127,25 @@ a.button {
 	display: inline-block;
 	font-family: "Nunito", sans-serif;
 	color: #fff;
+	font-weight: 900;
 	background: #00D9C0;
+	letter-spacing: 0.03125rem;
 }
 a.button:after {
 	content: ' \00279E';
 }
 a.button.medium {
-	font-size: 1rem;
-	line-height: 3rem;
+	font-size: 0.73rem;
 	text-transform: uppercase;
 	letter-spacing: 0.0625rem;
-	line-height: 2.5;
+	line-height: 2.5rem;
 	padding: 0 2rem;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 a.button.big {
-	font-size: 1rem;
+	font-size: 0.73rem;
 	line-height: 3rem;
 	padding: 0 2rem;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	text-transform: uppercase;
 }
 @media only screen and (min-width: 48em) {
 	header nav a {
