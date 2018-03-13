@@ -629,6 +629,9 @@ footer h5 {
 	padding: 4rem 0;
 	background: #F4F4F5;
 }
+#home .statement h2 {
+	margin-bottom: 1.5rem;
+}
 #home .hero .profile-picture {
 	width: 60%;
 	margin: 0 auto;
