@@ -146,6 +146,8 @@ a.button.big {
 	line-height: 3rem;
 	padding: 0 2rem;
 	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 @media only screen and (min-width: 48em) {
 	header nav a {
