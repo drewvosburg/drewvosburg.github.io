@@ -1,0 +1,8 @@
+http://35.226.184.238, https://www.drewvosburg.com {
+	gzip
+	ext .html
+	root ./
+}
+
+# cd into the directory
+# sudo caddy -conf caddyfile &
