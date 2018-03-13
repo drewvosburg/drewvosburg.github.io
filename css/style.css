@@ -18,7 +18,7 @@ ul {
 
 /* Mobile type sizes*/
 header, main, footer {
-  font-family: "Merriweather-Regular", serif;
+  font-family: "Merriweather", serif;
   color: #04060A;
   line-height: 1.75;
 }
@@ -51,7 +51,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.1875rem;
   line-height: 1.75;
   text-transform: uppercase;
@@ -121,13 +121,13 @@ header nav a {
 	text-transform: uppercase;
 	letter-spacing: 0.03125rem;
 	display: none;
-	font-weight: 900;
+	font-weight: 700;
 }
 a.button {
 	display: inline-block;
 	font-family: "Nunito", sans-serif;
 	color: #fff;
-	font-weight: 900;
+	font-weight: 700;
 	background: #00D9C0;
 	letter-spacing: 0.03125rem;
 }
@@ -434,7 +434,7 @@ footer h5 {
 /* Page label */
 .flourish .pagelabel {
 	font-size: 0.54rem;
-	font-weight: 300;
+	font-weight: 200;
 	letter-spacing: 0.015625rem;
 	font-family: "Nunito", sans-serif;
 	text-transform: uppercase;
