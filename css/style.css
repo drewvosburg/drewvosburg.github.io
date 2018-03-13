@@ -252,6 +252,8 @@ header a.home-link {
 	display: inline-block;
 	margin-top: 0.5rem;
 	font-size: 1.125rem;
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
 }
 @media only screen and (min-width: 48em) {
 	header {
@@ -708,6 +710,7 @@ footer h5 {
 	margin-bottom: 1rem;
 	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.16);
 	max-width: 100%;
+	float: left;
 }
 @media only screen and (min-width: 48em) {
 	#home .case-study {
