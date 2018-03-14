@@ -1,3 +1,31 @@
+/*
+
+ __   __                                 _         _ _   _ 
+ \ \ / /__  _   _    _ __ ___   __ _  __| | ___   (_) |_| |
+  \ V / _ \| | | |  | '_ ` _ \ / _` |/ _` |/ _ \  | | __| |
+   | | (_) | |_| |  | | | | | | (_| | (_| |  __/  | | |_|_|
+   |_|\___/ \__,_|  |_| |_| |_|\__,_|\__,_|\___|  |_|\__(_)
+                                                           
+	WELCOME TO MY CSS FILE!
+
+	Here you will learn all about my "unique" ideas for
+	how to use styles to make this site work better.
+
+	I've highlighted what I think are the most interesting
+    bits of CSS with this symbol:
+
+          /\
+       __/\/\__
+     /__/\!!/\__\
+     \ -\/!!\/- /
+        -\/\/-
+          \/
+
+	Scroll down, and enjoy!
+
+
+*/
+
 /* NORMALIZATION */
 html, body {
   margin: 0;
@@ -13,6 +41,7 @@ ul {
   margin: 0;
   padding-left: 1rem;
 }
+
 
 /* TYPOGRAPHY */
 
@@ -146,8 +175,6 @@ a.button.big {
 	line-height: 3rem;
 	padding: 0 2rem;
 	text-transform: uppercase;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 @media only screen and (min-width: 48em) {
 	header nav a {
@@ -166,9 +193,8 @@ a.button.big {
 		font-size: 1.125rem;
 	}
 	a.button.medium {
-		text-transform: none;
 		font-size: 1.125rem;
-		letter-spacing: 0;
+		line-height: 3rem;
 	}
 }
 
@@ -251,7 +277,8 @@ header .diamond.mark {
 header a.home-link {
 	display: inline-block;
 	margin-top: 0.5rem;
-	font-weight: 700
+	font-weight: 700;
+	line-height: 2rem;
 }
 @media only screen and (min-width: 48em) {
 	header {
