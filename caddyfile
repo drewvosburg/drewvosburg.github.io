@@ -1,8 +1,10 @@
-http://35.226.184.238, https://www.drewvosburg.com {
+http://35.226.184.238, https://www.drewvosburg.com, https://drewvosburg.com {
 	gzip
 	ext .html
 	root ./
 }
-
+errors {
+	404 404.html # Not Found
+}
 # cd into the directory
 # sudo caddy -conf caddyfile &
