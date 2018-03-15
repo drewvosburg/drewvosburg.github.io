@@ -40,6 +40,7 @@ ul {
 }
 
 
+
 /* TYPOGRAPHY */
 
 /* Mobile type sizes*/
@@ -48,7 +49,21 @@ header, main, footer {
   color: #04060A;
   line-height: 1.75;
 }
-h1, h2, h3, h4, h5, h6 {
+/*
+	  /\
+   __/\/\__ 	WTF IS THIS, Y U NO SET THIS ON BODY
+ /__/\!!/\__\
+ \ -\/!!\/- /	I am setting not setting the main font settings on
+    -\/\/-		the body element. Why?  I actually am using an 8pt
+      \/		grid system, so I want to keep the base font size
+      			(1rem) a multiple of 8.  I left it at 16px because
+      			it's a sane font size, but now I can change the size
+      			of the main text independently of the "rem" unit,
+      			which I use EXTENSIVELY for layout throught this doc.
+*/
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 8px 0;
 }
 h1, .h1 {
@@ -98,7 +113,21 @@ p, figure {
 	margin: 0;
 	margin-bottom: 1.5rem;
 }
+
 @media only screen and (min-width: 48em) {
+/*									^
+									|
+	  /\							|
+   __/\/\__     ____________________|
+ /__/\!!/\__\
+ \ -\/!!\/- /	GET USED TO IT PAL
+    -\/\/-	
+      \/		This media query is the end of mobile styles and the
+      			beginning of tablet and desktop styles. Almost all of
+      			my adjustments are made at this breakpoint. I chose
+      			these exact breakpoints because the coincide with the
+      			breakpoints of the flexbox grid system I am using.
+*/
 	header, main, footer {
 	  font-size: 1.13rem;
 	}
@@ -156,22 +185,19 @@ a.button {
 	font-weight: 700;
 	background: #00D9C0;
 	letter-spacing: 0.03125rem;
+	text-transform: uppercase;
 }
 a.button:after {
 	content: ' \00279E';
 }
-a.button.medium {
+a.button.medium, a.button.big {
 	font-size: 0.73rem;
-	text-transform: uppercase;
 	letter-spacing: 0.0625rem;
 	line-height: 2.5rem;
 	padding: 0 2rem;
 }
 a.button.big {
-	font-size: 0.73rem;
 	line-height: 3rem;
-	padding: 0 2rem;
-	text-transform: uppercase;
 }
 @media only screen and (min-width: 48em) {
 	header nav a {
@@ -186,10 +212,7 @@ a.button.big {
 		margin-left: 1rem;
 		margin-right: 0;
 	}
-	a.button.big {
-		font-size: 1.125rem;
-	}
-	a.button.medium {
+	a.button.medium, a.button.big {
 		font-size: 1.125rem;
 		line-height: 3rem;
 	}
@@ -223,7 +246,25 @@ a.button.big {
 		max-width: 64rem;
 	}
 }
+
+
+
+
 /* MARKS */
+
+
+/*
+	  /\
+   __/\/\__ 	WHAT ARE MARKS
+ /__/\!!/\__\
+ \ -\/!!\/- /	See the four-color diamond in the upper left? What
+    -\/\/-		about those little divider icons above the headers
+      \/		on the home page? Those are actually ALSO made with
+      			CSS. It's handy because I "rebrand" some of them on
+      			case study pages, similar to how you would with SVGs.
+      			I do this kind of thing because I can.
+*/
+
 .mark {
 	width: 2rem;
 	height: 2rem;
@@ -235,6 +276,18 @@ a.button.big {
 	margin-right: auto;
 	position: relative;
 }
+/*
+	  /\
+   __/\/\__ 	WAIT, WHY THE PSEUDO ELEMENT?
+ /__/\!!/\__\
+ \ -\/!!\/- /	The above style for ".diamond.mark" is actually the
+    -\/\/-		*placeholder* element. This allows me to give it margin,
+      \/		even though it is rotated 45 degrees. I do all of the
+      			visuals in the ::before pseudo element, styles below.
+
+      			Also, I think the diamond is one of my more clever
+      			one-element marks to date.
+*/
 .diamond.mark:before {
 	box-sizing: border-box;
 	display: block;
@@ -256,6 +309,19 @@ a.button.big {
 	margin-left: auto;
 	margin-right: auto;
 }
+/*
+	  /\
+   __/\/\__ 	...BUT THEN NO PSEUDO ELEMENT?
+ /__/\!!/\__\
+ \ -\/!!\/- /	The above style for ".stripes.mark" doesn't *need* a
+    -\/\/-		placeholder element, because it's a rectangle already.
+      \/		The margins on this sucker make sense, it's oriented in
+      			a standard way, so I can just leave it.
+
+      			Also, notice the tricky inset shadow for the fourth line.
+*/
+
+
 /* HEADER */
 header {
 	background: #FFF;
@@ -292,8 +358,8 @@ header a.home-link {
 header nav {
 	float: right;
 }
-/* FOOTER */
 
+/* FOOTER */
 footer {
   color: #fff;
   background: #6B7995;
@@ -340,6 +406,16 @@ footer h5 {
 .flourish.west {
 	left: 0;
 }
+/*
+	  /\
+   __/\/\__ 	HERE. WE. GOOOOOOOOOOOO!!!!!!
+ /__/\!!/\__\
+ \ -\/!!\/- /	I'm pretty pumped about how these flourishes turned out!
+    -\/\/-		Notice above, we are setting the flourish parent elements
+      \/		to move to the corners. This is not rocket science, but
+      			it makes it easy to read the classes aloud in the HTML file!
+*/
+
 @media only screen and (min-width: 48em) {
 	.flourish.south {
 		bottom: -1rem;
@@ -391,6 +467,15 @@ footer h5 {
 .flourish.west .cropmarks:after {
 	right: 0;
 }
+/*
+	  /\
+   __/\/\__ 	WOW, THAT IS A *BIT* OUT OF HAND
+ /__/\!!/\__\
+ \ -\/!!\/- /	LOL, I mean, I probably could have gotten away with rotating
+    -\/\/-		the parent element, ".flourish .cropmarks". This just made the
+      \/		most sense in my head when I was making these, and it works
+      			predictably, so.... whatever haha
+*/
 
 @media only screen and (min-width: 48em) {
 	.flourish .cropmarks {
@@ -424,6 +509,15 @@ footer h5 {
 	border-radius: 100%;
 	background: #04060A;
 	box-shadow: 0 0.875rem 0 #FFBA49, 0 1.8125rem 0 #FF4365, 0 2.75rem 0 #00D9C0;
+/*
+	  /\
+   __/\/\__ 	SEE THESE BOX SHADOWS?
+ /__/\!!/\__\
+ \ -\/!!\/- /	I'm using those to echo the circles vertically. This lets me make
+    -\/\/-		one element into as many identically shaped elements as I need!
+      \/		
+      			Later I turn this approach up to 11...
+*/
 	margin-left: 0.5rem;
 	margin-top: 1rem;
 	position: absolute;
@@ -482,6 +576,19 @@ footer h5 {
 		margin-top: 1rem;
 	}
 }
+
+/* Registration Marks*/
+/*
+	  /\
+   __/\/\__ 	GOOD LUCK, PARTNER
+ /__/\!!/\__\
+ \ -\/!!\/- /	If you can follow what's going on here, you probably have
+    -\/\/-		too much time on your hands.  These guys are sadly not able
+      \/		to be single div elements that also were pixel perfect, so
+      			I gave up and threw in a second element.
+
+      			I know, I'm a loser. =P
+*/
 .flourish .registration {
 	width: 2rem;
 	height: 2rem;
@@ -610,6 +717,8 @@ footer h5 {
 		top: -5rem;
 	}
 }
+
+
 /* Swatches */
 .flourish .swatches {
 	display: none;
@@ -622,6 +731,16 @@ footer h5 {
 		background: #00D9C0;
 		position: absolute;
 		box-shadow: 0 1.25rem 0 rgba(100, 217, 192, 0.8), 0 2.5rem 0 rgba(100, 217, 192, 0.6), 0 3.75rem 0 rgba(100, 217, 192, 0.4), 0 5rem 0 rgba(100, 217, 192, 0.2),               0 6.75rem 0 rgba(255, 67, 101, 1), 0 8rem 0 rgba(255, 67, 101, 0.8), 0 9.25rem 0 rgba(255, 67, 101, 0.6), 0 10.5rem 0 rgba(255, 67, 101, 0.4), 0 11.75rem 0 rgba(255, 67, 101, 0.2),               0 13.5rem 0 rgba(255, 186, 73, 1), 0 14.75rem 0 rgba(255, 186, 73, 0.8), 0 16rem 0 rgba(255, 186, 73, 0.6), 0 17.25rem 0 rgba(255, 186, 73, 0.4), 0 18.5rem 0 rgba(255, 186, 73, 0.2),               0 20.25rem 0 rgba(4, 6, 10, 1), 0 21.5rem 0 rgba(4, 6, 10, 0.8), 0 22.75rem 0 rgba(4, 6, 10, 0.6), 0 24rem 0 rgba(4, 6, 10, 0.4), 0 25.25rem 0 rgba(4, 6, 10, 0.2);
+/*
+	  /\
+   __/\/\__ 	UH.... WHAT AM I SEEING HERE EXACTLY
+ /__/\!!/\__\
+ \ -\/!!\/- /	Remember earlier when I showed that box-shadow thing? Here it
+    -\/\/-		is taken to an unhealthy level. This is actually one element
+      \/		with 19 box shadows, resulting in 20 squares that make up a
+      			long strip of squares. Look for one at the bottom of the home
+      			page in the left corner.
+*/
 	}
 	.flourish.north .swatches {
 		top: 0rem;
@@ -641,6 +760,7 @@ footer h5 {
 		left: -2rem;
 	}
 }
+
 /* HOME */
 #home .hero {
 	text-align: center;
@@ -661,7 +781,6 @@ footer h5 {
 	margin: 0 auto;
 	margin-bottom: 1rem;
 	border-radius: 100%;
-	background: #EAEBED;
 }
 #home .hero .button {
 	margin-top: 2rem;
@@ -672,6 +791,7 @@ footer h5 {
     max-width: 100%;
     height: auto;
     float: left;
+	background: #EAEBED;
 }
 #home .case-studies, #home .other-work {
 	padding-top: 4rem;
@@ -880,6 +1000,8 @@ main.case-study .hero h4 {
 		padding-right: 0;
 	}
 }
+
+/* Hologram Case Study */
 #hologram .hero-image-container {
 	overflow: visible;
 }
@@ -912,6 +1034,14 @@ main.case-study .hero h4 {
 #hologram .flourish .circles {
 	background: #0A1435;
 	box-shadow: 0 0.875rem 0 #1EFECB, 0 1.8125rem 0 #00A5FF, 0 2.75rem 0 #FE17C2;
+/*
+	  /\
+   __/\/\__ 	MORE FLOURISHES?
+ /__/\!!/\__\
+ \ -\/!!\/- /	This is me branding existing flourish elements for case studies.
+    -\/\/-
+      \/
+*/
 }
 #hologram .diamond.mark:before {
 	background: #00A5FF;
@@ -935,14 +1065,24 @@ main.case-study .hero h4 {
 	}
 }
 @media only screen and (min-width: 64em) {
+/*									^
+	  /\							|
+   __/\/\__ 	____________________|
+ /__/\!!/\__\
+ \ -\/!!\/- /	A RARE BREED
+    -\/\/-
+      \/		This is one of the few times I specifically target
+      			larger screens, to make sure the header image for
+      			this case study looks good on tablets and up
+*/
 	#hologram .hero-image {
 		width: 90%;
 		padding-top: 90%;
 		top: -10%;
 	}
 }
-/* NEWSY CASE STUDY */
 
+/* Newsy Case Study */
 #newsy .flourish .circles {
 	background: #000;
 	box-shadow: 0 0.875rem 0 #FF7800, 0 1.8125rem 0 #41A5F0, 0 2.75rem 0 #E3E3E3;
@@ -1001,6 +1141,15 @@ main.case-study .hero h4 {
 	}
 }
 @media only screen and (min-width: 75em) {
+/*									^
+	  /\							|
+   __/\/\__ 	____________________|
+ /__/\!!/\__\
+ \ -\/!!\/- /	WAIT YOU JUST DID IT AGAIN...
+    -\/\/-
+      \/		Right but this one is for even bigger screens. Another
+      			hero image though.
+*/
 	#newsy .hero-image {
 		padding-top: 28rem;
 		top: 0%;
@@ -1074,6 +1223,14 @@ main.case-study#voice-search {
 	margin-bottom: 1rem;
 }
 @media only screen and (min-width: 75em) {
+/*									^
+	  /\							|
+   __/\/\__ 	____________________|
+ /__/\!!/\__\
+ \ -\/!!\/- /	OK FINE I DO IT FOR ALL OF THE HERO IMAGES OK
+    -\/\/-
+      \/		Just trying to keep you on your toes.
+*/
 	#voice-search .hero .hero-image {
 		margin-top: -3.5rem;
 		left: 10%;
