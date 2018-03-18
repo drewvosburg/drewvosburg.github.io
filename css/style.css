@@ -779,14 +779,13 @@ footer h5 {
 }
 #home .statement {
 	padding: 4rem 0;
-	background: #F4F4F5;
-}
-#home .statement h2 {
-	margin-bottom: 1.5rem;
 	background: #6B7995;
 	color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+#home .statement h2 {
+	margin-bottom: 1.5rem;
 }
 #home .hero .profile-picture {
 	width: 60%;
