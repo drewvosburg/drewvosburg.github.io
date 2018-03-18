@@ -783,6 +783,10 @@ footer h5 {
 }
 #home .statement h2 {
 	margin-bottom: 1.5rem;
+	background: #6B7995;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 #home .hero .profile-picture {
 	width: 60%;
@@ -869,6 +873,7 @@ footer h5 {
 	}
 	#home .hero {
 		text-align: initial;
+		padding: 10rem 0;
 	}
 	#home .hero h1 {
 		margin-bottom: 2rem;
@@ -878,6 +883,9 @@ footer h5 {
 	}
 	#home .hero .profile-picture {
 		width: 100%;
+	}
+	#home .flourish.north {
+		top: -2rem;
 	}
 	#home .statement {
 		padding: 8rem 0;
