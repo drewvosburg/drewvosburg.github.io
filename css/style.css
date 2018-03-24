@@ -821,7 +821,7 @@ footer h5 {
 	background: linear-gradient(135deg, #051521 0%, #41A5F0 100%);
 }
 #home .case-study.wrigley-rooftops {
-	background: linear-gradient(135deg, #162B53 0%, #0C662C 100%);
+	background: linear-gradient(135deg, #173029 0%, #0C662C 100%);
 }
 #home .case-study.voice-search {
 	background: linear-gradient(135deg, #131E35 0%, #6B7995 100%);
@@ -1102,11 +1102,11 @@ main.case-study .hero h4 {
 /* Wrigley Rooftops Case Study */
 #wrigley-rooftops .flourish .circles {
 	background: #162B53;
-	box-shadow: 0 0.875rem 0 #F7CE00, 0 1.8125rem 0 #0C662C, 0 2.75rem 0 #91E3AF;
+	box-shadow: 0 0.875rem 0 #0C662C, 0 1.8125rem 0 #F7CE00, 0 2.75rem 0 #7D6755;
 }
 #wrigley-rooftops .diamond.mark:before {
-	background: #91E3AF;
-	box-shadow: 0 1.2rem 0 #F7CE00, 1.2rem 0 0 #0C662C, 1.2rem 1.2rem 0 #162B53;
+	background: #F7CE00;
+	box-shadow: 0 1.2rem 0 #7D6755, 1.2rem 0 0 #0C662C, 1.2rem 1.2rem 0 #162B53;
 }
 #wrigley-rooftops .hero-image-container {
 	overflow: visible;
@@ -1124,7 +1124,7 @@ main.case-study .hero h4 {
 }
 @media only screen and (min-width: 48em) {
 	#wrigley-rooftops .flourish .circles {
-		box-shadow: 0 1.375rem 0 #F7CE00, 0 2.75rem 0 #0C662C, 0 4.125rem 0 #91E3AF;
+		box-shadow: 0 1.375rem 0 #0C662C, 0 2.75rem 0 #F7CE00, 0 4.125rem 0 #7D6755;
 	}
 	#wrigley-rooftops .hero-image-container {
 		position: absolute;
