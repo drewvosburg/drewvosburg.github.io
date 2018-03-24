@@ -1112,9 +1112,10 @@ main.case-study .hero h4 {
 #wrigley-rooftops .hero-image {
 	background-image: url(https://storage.googleapis.com/media.drewvosburg.com/wrigley-hero.png);
     background-position: top left;
-    width: 100%;
-    left: 0;
-    top: 0;
+    width: 300%;
+    left: -45%;
+    top: -70%;
+    padding-top: 100%;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1127,25 +1128,9 @@ main.case-study .hero h4 {
 	}
 	#wrigley-rooftops .hero-image {
 		padding-top: 110%;
-		width: 115%;
-		left: 0;
-		top: -5%;
-	}
-}
-@media only screen and (min-width: 75em) {
-/*									^
-	  /\							|
-   __/\/\__ 	____________________|
- /__/\!!/\__\
- \ -\/!!\/- /	WAIT YOU JUST DID IT AGAIN...
-    -\/\/-
-      \/		Right but this one is for even bigger screens. Another
-      			hero image though.
-*/
-	#wrigley-rooftops .hero-image {
-		padding-top: 28rem;
-		top: 0%;
-		left: 5%;
+    	width: 140%;
+		top: -40%;
+		left: -40%;
 	}
 }
 
