@@ -791,7 +791,13 @@ footer h5 {
 	width: 60%;
 	margin: 0 auto;
 	margin-bottom: 1rem;
+	margin-top: 1rem;
 	border-radius: 100%;
+}
+#home .hero .profile-picture {
+	content: '';
+	display: block;
+	clear: both;
 }
 #home .hero .button {
 	margin-top: 2rem;
@@ -885,6 +891,7 @@ footer h5 {
 	}
 	#home .hero .profile-picture {
 		width: 100%;
+		margin: 0 auto;
 	}
 	#home .flourish.north {
 		top: -2rem;
