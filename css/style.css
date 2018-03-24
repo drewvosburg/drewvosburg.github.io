@@ -820,6 +820,9 @@ footer h5 {
 #home .case-study.newsy {
 	background: linear-gradient(135deg, #051521 0%, #41A5F0 100%);
 }
+#home .case-study.wrigley-rooftops {
+	background: linear-gradient(135deg, #162B53 0%, #0C662C 100%);
+}
 #home .case-study.voice-search {
 	background: linear-gradient(135deg, #131E35 0%, #6B7995 100%);
 }
@@ -1129,7 +1132,7 @@ main.case-study .hero h4 {
 	#wrigley-rooftops .hero-image {
 		padding-top: 110%;
     	width: 140%;
-		top: -40%;
+		top: -50%;
 		left: -40%;
 	}
 }
