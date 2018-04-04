@@ -1025,6 +1025,10 @@ main.case-study .hero h4 {
 		padding-right: 0;
 	}
 }
+/* Hidden Case Study */
+#shopfresh .hero-image {
+	background-image: url('https://storage.googleapis.com/media.drewvosburg.com/shopfresh-card.png');
+}
 
 /* Hologram Case Study */
 #hologram .hero-image-container {
