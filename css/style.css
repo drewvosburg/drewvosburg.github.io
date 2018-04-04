@@ -1045,6 +1045,19 @@ main.case-study .hero h4 {
 	margin-bottom: 2rem;
 	display: inline-block;
 }
+#hologram .diamond.mark:before {
+	background: #00A5FF;
+	box-shadow: 0 1.2rem 0 #FFCF49, 1.2rem 0 0 #FF375D, 1.2rem 1.2rem 0 #211A1E;
+}
+#shopfresh .flourish .circles {
+	background: #0EE17B;
+	box-shadow: 0 0.875rem 0 #FFCF49, 0 1.8125rem 0 #FF375D, 0 2.75rem 0 #0EE17B;
+}
+@media only screen and (min-width: 48em) {
+	#shopfresh .flourish .circles {
+		box-shadow: 0 1.375rem 0 #FFCF49, 0 2.75rem 0 #FF375D, 0 4.125rem 0 #0EE17B;
+	}
+}
 
 /* Hologram Case Study */
 #hologram .hero-image-container {
