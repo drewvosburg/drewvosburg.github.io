@@ -1032,6 +1032,9 @@ main.case-study .hero h4 {
 	background-position: top;
 	background-repeat: no-repeat;
 }
+#shopfresh .hero .hero-image-container {
+	padding-top: 50%;
+}
 #shopfresh .container img {
 	width: 100%;
 }
@@ -1040,6 +1043,7 @@ main.case-study .hero h4 {
 }
 #shopfresh .stickies {
 	margin-bottom: 2rem;
+	display: inline-block;
 }
 
 /* Hologram Case Study */
