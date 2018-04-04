@@ -1026,6 +1026,12 @@ main.case-study .hero h4 {
 	}
 }
 /* Hidden Case Study */
+#shopfresh {
+	color: #211A1E;
+}
+#shopfresh .hero h4 {
+	color: rgba(33, 26, 30, 0.5);
+}
 #shopfresh .hero-image {
 	background-image: url('https://storage.googleapis.com/media.drewvosburg.com/shopfresh-card.png');
 	background-size: contain;
@@ -1050,7 +1056,7 @@ main.case-study .hero h4 {
 	box-shadow: 0 1.2rem 0 #FFCF49, 1.2rem 0 0 #FF375D, 1.2rem 1.2rem 0 #211A1E;
 }
 #shopfresh .flourish .circles {
-	background: #0EE17B;
+	background: #211A1E;
 	box-shadow: 0 0.875rem 0 #FFCF49, 0 1.8125rem 0 #FF375D, 0 2.75rem 0 #0EE17B;
 }
 @media only screen and (min-width: 48em) {
