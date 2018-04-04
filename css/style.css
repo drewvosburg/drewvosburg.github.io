@@ -1028,6 +1028,15 @@ main.case-study .hero h4 {
 /* Hidden Case Study */
 #shopfresh .hero-image {
 	background-image: url('https://storage.googleapis.com/media.drewvosburg.com/shopfresh-card.png');
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+#shopfresh .container img {
+	width: 100%;
+}
+#shopfresh .compilation img {
+	box-shadow: 0 16px 16px 0 rgba(0,0,0,0.16);
 }
 
 /* Hologram Case Study */
