@@ -826,8 +826,11 @@ footer h5 {
 #home .case-study.wrigley-rooftops {
 	background: linear-gradient(135deg, #173029 0%, #0C662C 100%);
 }
+#home .case-study.smart-mirror {
+  background: linear-gradient(135deg, #131E35 0%, #6B7995 100%);
+}
 #home .case-study.voice-search {
-	background: linear-gradient(135deg, #131E35 0%, #6B7995 100%);
+  background: linear-gradient(135deg, #48021E 0%, #940404 100%);
 }
 #home .case-study {
 	background: #6B7995;
