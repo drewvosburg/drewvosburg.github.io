@@ -1293,11 +1293,12 @@ main.case-study#voice-search {
 	#voice-search figcaption {
 		margin-top: 1rem;
 	}
-#voice-search ul, #voice-search ol {
-	margin-bottom: 1.5rem;
-}
-#voice-search li {
-	margin-bottom: 1rem;
+  #voice-search ul, #voice-search ol {
+  	margin-bottom: 1.5rem;
+  }
+  #voice-search li {
+  	margin-bottom: 1rem;
+  }
 }
 @media only screen and (min-width: 75em) {
 /*									               ^
@@ -1319,5 +1320,4 @@ main.case-study#voice-search {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-}
 }
