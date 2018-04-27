@@ -1244,7 +1244,7 @@ main.case-study#voice-search {
     transition: all 0.2s;
     text-shadow:  0 0 0 2 #fff;
 }
-#voice-search p a:hover {
+#voice-search p a:hover, #smart-mirror p a:hover {
 	box-shadow: inset 0 -0.9em 0 #FFBA49;
 }
 #voice-search img, #voice-search video {
