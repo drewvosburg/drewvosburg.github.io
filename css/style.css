@@ -119,18 +119,18 @@ hr {
 }
 
 @media only screen and (min-width: 48em) {
-/*									^
-									|
-	  /\							|
+/*									                ^
+									                  |
+	    /\							              |
    __/\/\__     ____________________|
  /__/\!!/\__\
  \ -\/!!\/- /	GET USED TO IT PAL
     -\/\/-	
-      \/		This media query is the end of mobile styles and the
-      			beginning of tablet and desktop styles. Almost all of
-      			my adjustments are made at this breakpoint. I chose
-      			these exact breakpoints because the coincide with the
-      			breakpoints of the flexbox grid system I am using.
+      \/		  This media query is the end of mobile styles and the
+      			  beginning of tablet and desktop styles. Almost all of
+      			  my adjustments are made at this breakpoint. I chose
+      			  these exact breakpoints because the coincide with the
+      			  breakpoints of the flexbox grid system I am using.
 */
 	header, main, footer {
 	  font-size: 1.13rem;
@@ -140,7 +140,6 @@ hr {
 	}
 	h1 {
 	  font-size: 4.75rem;
-	  letter-spacing: -0.125rem;
 	  line-height: 1.07;
 	}
 	h2 {
