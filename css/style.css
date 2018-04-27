@@ -345,6 +345,7 @@ header a.home-link {
 	margin-top: 0.5rem;
 	font-weight: 700;
 	line-height: 2rem;
+  -webkit-font-smoothing: antialiased;
 }
 @media only screen and (min-width: 48em) {
 	header {
