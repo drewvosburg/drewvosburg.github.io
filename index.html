@@ -377,10 +377,8 @@
 				}
 			}
 			for (var j = 0; j < caseStudies.length; j++) {
-				console.log(caseStudies[j].getBoundingClientRect().top < cardTriggerPoint)
-				console.log(caseStudies[j].getBoundingClientRect().top, scrollTop, cardTriggerPoint)
-
-				if (caseStudies[j].getBoundingClientRect().top < scrollTop + cardTriggerPoint) {
+				if (caseStudies[j].getBoundingClientRect().top < cardTriggerPoint) {
+					caseStudies[j].classList.remove('hidden');
 				}
 			}
 		}
