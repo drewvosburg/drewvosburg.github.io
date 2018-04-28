@@ -326,15 +326,17 @@
 
 	<!-- HIDE HIDDEN SECIONTS -->
 	<script type="text/javascript">
-		
+		var triggerPoint = window.innerHeight * .75;
 		var rollcages = document.getElementsByClassName('rollcage');
 		var scrollTop = document.documentElement.scrollTop;
 		function getRollcages() {
 			for (var i = 0; i < rollcages.length; i++) {
-				if (rollcages[i].getBoundingClientRect().top > scrollTop) {
+				if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
 					rollcages[i].classList.add('hidden');
+					setTimeout(function() {rollcages[i].classList.add('animate')}, 10)
 				}
 			}
+			rollcages = document.getElementsByClassName('rollcage hidden');
 		}
 		window.onload = function(){
 			getRollcages();
@@ -343,7 +345,13 @@
 	</script>
 	<!-- SCROLL ACTIVATION SCRIPT -->
 	<script type="text/javascript">
-		
+		window.onscroll = function(){
+			for (var i = 0; i < rollcages.length; i++) {
+				if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
+					rollcages[i].classList.remove('hidden');
+				}
+			}
+		}
 	</script>
 </body>
 

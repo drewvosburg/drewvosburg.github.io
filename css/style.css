@@ -772,6 +772,8 @@ section {
 .rollcage {
   transform: translateZ(-20rem) rotateX(0deg) translateZ(20rem);
   opacity: 1;
+}
+.rollcage.animate {
   transition: transform 1s, opacity 0.5s;
 }
 .rollcage.hidden {
