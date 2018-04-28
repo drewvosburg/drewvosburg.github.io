@@ -355,7 +355,7 @@
 		}
 		function getCaseStudies() {
 			for (var i = 0; i < caseStudies.length; i++) {
-				if (caseStudies[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
+				if (caseStudies[i].getBoundingClientRect().top > scrollTop + cardTriggerPoint) {
 					caseStudies[i].classList.add('hidden','animate');
 				}
 			}
@@ -375,8 +375,7 @@
 				}
 			}
 			for (var i = 0; i < caseStudies.length; i++) {
-				if (caseStudies[i].getBoundingClientRect().top < scrollTop + triggerPoint) {
-					//caseStudies[i].classList.remove('hidden');
+				if (caseStudies[i].getBoundingClientRect().top < scrollTop + cardTriggerPoint) {
 				}
 			}
 		}
