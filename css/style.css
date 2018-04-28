@@ -941,6 +941,7 @@ section {
 	padding: 3rem 2rem;
 	margin-bottom: 2rem;
   position: relative;
+  overflow: hidden;
 }
 #home .case-study:last-child {
 	margin-bottom: 0;
