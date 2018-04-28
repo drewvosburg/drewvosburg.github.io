@@ -971,6 +971,7 @@ section {
   transform: scale(20, 20);
   opacity: 0;
   pointer-events: none;
+  will-change: transform, opacity;
 }
 #home .case-study.animate .mask {
   transition: transform 0.5s cubic-bezier(0.5,0,.75,0), 0s opacity 1s;
@@ -983,7 +984,8 @@ section {
   opacity: 1;
 }
 #home .case-study.animate > .row {
-  transition: 0.2s opacity 0.3s
+  transition: 0.5s opacity 0.3s;
+  will-change: opacity;
 }
 #home .case-study.hidden > .row {
   opacity: 0;
