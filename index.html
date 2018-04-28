@@ -330,12 +330,10 @@
 		var rollcages = document.getElementsByClassName('rollcage');
 		var scrollTop = document.documentElement.scrollTop;
 		function getRollcages() {
-			if (rollcages.length) {
-				rollcages.forEach(function(element){
-					if (element.getBoundingClientRect().top > scrollTop) {
-						element.classList.add('hidden');
-					}
-				})
+			for (var i = 0; i < rollcages.length; i++) {
+				if (rollcages[i].getBoundingClientRect().top > scrollTop) {
+					rollcages[i].classList.add('hidden');
+				}
 			}
 		}
 		window.onload = function(){
