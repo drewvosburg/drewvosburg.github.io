@@ -347,7 +347,7 @@
 
 		function getRollcages() {
 			for (var i = 0; i < rollcages.length; i++) {
-				if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
+				if (rollcages[i].getBoundingClientRect().top > triggerPoint) {
 					rollcages[i].classList.add('hidden','animate');
 				}
 			}
@@ -355,7 +355,7 @@
 		}
 		function getCaseStudies() {
 			for (var i = 0; i < caseStudies.length; i++) {
-				if (caseStudies[i].getBoundingClientRect().top > scrollTop + cardTriggerPoint) {
+				if (caseStudies[i].getBoundingClientRect().top > cardTriggerPoint) {
 					caseStudies[i].classList.add('hidden','animate');
 				}
 			}
@@ -372,12 +372,12 @@
 		window.onscroll = function(){
 			console.log(scrollTop);
 			for (var i = 0; i < rollcages.length; i++) {
-				if (rollcages[i].getBoundingClientRect().top < scrollTop + triggerPoint) {
+				if (rollcages[i].getBoundingClientRect().top < triggerPoint) {
 					rollcages[i].classList.remove('hidden');
 				}
 			}
 			for (var j = 0; j < caseStudies.length; j++) {
-				console.log(caseStudies[j].getBoundingClientRect().top < scrollTop + cardTriggerPoint)
+				console.log(caseStudies[j].getBoundingClientRect().top < cardTriggerPoint)
 				console.log(caseStudies[j].getBoundingClientRect().top, scrollTop, cardTriggerPoint)
 
 				if (caseStudies[j].getBoundingClientRect().top < scrollTop + cardTriggerPoint) {
