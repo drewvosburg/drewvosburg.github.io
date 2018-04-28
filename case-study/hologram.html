@@ -114,8 +114,12 @@
 					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1">
 						<h1>Hologram</h1>
 						<h4>Product Designer</h4>
-						<p>Working at a startup, my responsibilities were varied, ranging from establishing brand standards, redesigning the marketing site, shooting product photos, designing digital display ads, product packaging, and creating video collateral.</p>
-						<div class="diamond mark"></div>
+						<div class="rollcage">
+							<p>Working at a startup, my responsibilities were varied, ranging from establishing brand standards, redesigning the marketing site, shooting product photos, designing digital display ads, product packaging, and creating video collateral.</p>
+						</div>
+						<div class="rollcage">
+							<div class="diamond mark"></div>
+						</div>
 					</div>
 
 					<div class="col-xs-12 last-sm first-xs col-sm-6 col-lg-4">
@@ -134,8 +138,10 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-lg-4 col-lg-offset-1">
 						<div class="textbox">
-							<h2>Designed to build fast</h2>
-							<p>I created a design system from colors, patterns, and component libraries. The system empowered me to create consistent, cohesive, functional designs with ease. Shared styles also made the designs easier for developers to build quickly.</p>
+							<div class="rollcage">
+								<h2>Designed to build fast</h2>
+								<p>I created a design system from colors, patterns, and component libraries. The system empowered me to create consistent, cohesive, functional designs with ease. Shared styles also made the designs easier for developers to build quickly.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -149,9 +155,11 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-lg-4 ">
 						<div class="textbox">
+							<div class="rollcage">
 							<h2>Clean and tidy</h2>
-							<p>Good design doesn't always mean removing information. Importance and context are key to guiding layouts and making more functional designs.</p>
-							<p>Focused typography structures information and can make anything better, even email receipts.</p>
+								<p>Good design doesn't always mean removing information. Importance and context are key to guiding layouts and making more functional designs.</p>
+								<p>Focused typography structures information and can make anything better, even email receipts.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -166,9 +174,11 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-lg-4 col-lg-offset-1">
 						<div class="textbox">
-							<h2>...with a touch of playfulness</h2>
-							<p>Delight is crucial to making a memorable product. Flourishes and carefully crafted details make a functional design a joy to use, and helps a design stick in your mind longer.</p>
-							<p>Hologram had a very techincal offering, so small playful elements provide relief from technical detail.</p>
+							<div class="rollcage">
+								<h2>...with a touch of playfulness</h2>
+								<p>Delight is crucial to making a memorable product. Flourishes and carefully crafted details make a functional design a joy to use, and helps a design stick in your mind longer.</p>
+								<p>Hologram had a very techincal offering, so small playful elements provide relief from technical detail.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -204,6 +214,37 @@
 	</footer>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+	<!-- HIDE SECTIONS FOR SCROLL REVEALS -->
+	<script type="text/javascript">
+		var triggerPoint = window.innerHeight * .75;
+		var rollcages = document.getElementsByClassName('rollcage');
+		var scrollTop = document.documentElement.scrollTop;
+
+		function getRollcages() {
+			for (var i = 0; i < rollcages.length; i++) {
+				if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
+					var element = rollcages[i];
+					element.classList.add('hidden');
+					setTimeout(function(){element.classList.add('animate')}, 10)
+				}
+			}
+			rollcages = document.getElementsByClassName('rollcage hidden');
+		}
+
+		window.onload = function(){
+			getRollcages();
+		}
+
+		/* SCROLL EVENT */
+		window.onscroll = function(){
+			for (var i = 0; i < rollcages.length; i++) {
+				if (rollcages[i].getBoundingClientRect().top < scrollTop + triggerPoint) {
+					rollcages[i].classList.remove('hidden');
+				}
+			}
+		}
+	</script>
 </body>
 
 <!--

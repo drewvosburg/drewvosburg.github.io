@@ -322,13 +322,12 @@
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
-
-
-	<!-- HIDE HIDDEN SECIONTS -->
+	<!-- HIDE SECTIONS FOR SCROLL REVEALS -->
 	<script type="text/javascript">
 		var triggerPoint = window.innerHeight * .75;
 		var rollcages = document.getElementsByClassName('rollcage');
 		var scrollTop = document.documentElement.scrollTop;
+
 		function getRollcages() {
 			for (var i = 0; i < rollcages.length; i++) {
 				if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
@@ -339,13 +338,12 @@
 			}
 			rollcages = document.getElementsByClassName('rollcage hidden');
 		}
+
 		window.onload = function(){
 			getRollcages();
 		}
 
-	</script>
-	<!-- SCROLL ACTIVATION SCRIPT -->
-	<script type="text/javascript">
+		/* SCROLL EVENT */
 		window.onscroll = function(){
 			for (var i = 0; i < rollcages.length; i++) {
 				if (rollcages[i].getBoundingClientRect().top < scrollTop + triggerPoint) {
