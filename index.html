@@ -370,13 +370,16 @@
 
 		/* SCROLL EVENT */
 		window.onscroll = function(){
-			var scrollTop = document.documentElement.scrollTop;
+			console.log(scrollTop);
 			for (var i = 0; i < rollcages.length; i++) {
 				if (rollcages[i].getBoundingClientRect().top < scrollTop + triggerPoint) {
 					rollcages[i].classList.remove('hidden');
 				}
 			}
 			for (var j = 0; j < caseStudies.length; j++) {
+				console.log(caseStudies[j].getBoundingClientRect().top < scrollTop + cardTriggerPoint)
+				console.log(caseStudies[j].getBoundingClientRect().top, scrollTop, cardTriggerPoint)
+
 				if (caseStudies[j].getBoundingClientRect().top < scrollTop + cardTriggerPoint) {
 				}
 			}
