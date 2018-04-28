@@ -823,6 +823,8 @@ footer h5 {
   left: 0;
   min-height: 100%;
   min-width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;;
 }
 @keyframes frontCoin {
     0%   {transform: rotateY(0deg);}
