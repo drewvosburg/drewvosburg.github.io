@@ -348,7 +348,7 @@
 	<script type="text/javascript">
 		window.onscroll = function(){
 			for (var i = 0; i < rollcages.length; i++) {
-				if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
+				if (rollcages[i].getBoundingClientRect().top < scrollTop + triggerPoint) {
 					rollcages[i].classList.remove('hidden');
 				}
 			}
