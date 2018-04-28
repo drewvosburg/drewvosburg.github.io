@@ -224,9 +224,7 @@
 		function getRollcages() {
 			for (var i = 0; i < rollcages.length; i++) {
 				if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
-					var element = rollcages[i];
-					element.classList.add('hidden');
-					setTimeout(function(){element.classList.add('animate')}, 10)
+					rollcages[i].classList.add('hidden animate');
 				}
 			}
 			rollcages = document.getElementsByClassName('rollcage hidden');
