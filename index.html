@@ -151,10 +151,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-lg-8 col-lg-offset-2">
-						<h2>A designer's job is to listen and learn.</h2>
-						<p>My responsibility is to determine who the design is for, what they are doing, and what story the design tells.</p>
-						<p>I design with care and attention to detail, informed by facts and feelings, conversation and intuition.</p>
-						<p>I am always improving, and eager to take on the next challenge.</p>
+						<div class="rollcage">
+							<h2>A designer's job is to listen and learn.</h2>
+							<p>My responsibility is to determine who the design is for, what they are doing, and what story the design tells.</p>
+							<p>I design with care and attention to detail, informed by facts and feelings, conversation and intuition.</p>
+							<p>I am always improving, and eager to take on the next challenge.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -328,11 +330,13 @@
 		var rollcages = document.getElementsByClassName('rollcage');
 		var scrollTop = document.documentElement.scrollTop;
 		function getRollcages() {
-			rollcages.forEach(function(element){
-				if (element.getBoundingClientRect().top > scrollTop) {
-					element.classList.add('hidden');
-				}
-			})
+			if (rollcages.length) {
+				rollcages.forEach(function(element){
+					if (element.getBoundingClientRect().top > scrollTop) {
+						element.classList.add('hidden');
+					}
+				})
+			}
 		}
 		window.onload = function(){
 			getRollcages();
