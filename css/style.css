@@ -777,9 +777,17 @@ section {
   transition: transform 1s, opacity 0.5s;
 }
 .rollcage.hidden {
-  transform: translateZ(-20rem) rotateX(-15deg) translateZ(20rem);
+  transform: translateZ(-20rem) rotateX(-5deg) translateZ(20rem);
   opacity: 0;
   will-change: opacity, transform;
+}
+
+
+
+@media only screen and (min-width: 48em) {
+  .rollcage.hidden {
+    transform: translateZ(-20rem) rotateX(-15deg) translateZ(20rem);
+  }
 }
 
 /* HOME */
