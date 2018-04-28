@@ -905,31 +905,31 @@ section {
 	background: linear-gradient(135deg, #00A5FF 0%, #FE17C2 100%);
 }
 #home .case-study.hologram .mask .logo {
-  background: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
+  background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
 #home .case-study.newsy {
-	background: linear-gradient(135deg, #051521 0%, #41A5F0 100%);
+	background-image: linear-gradient(135deg, #051521 0%, #41A5F0 100%);
 }
 #home .case-study.newsy .mask .logo {
-  background: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
+  background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
 #home .case-study.wrigley-rooftops {
 	background: linear-gradient(135deg, #173029 0%, #0C662C 100%);
 }
 #home .case-study.wrigley-rooftops .mask .logo {
-  background: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
+  background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
 #home .case-study.smart-mirror {
   background: linear-gradient(135deg, #131E35 0%, #6B7995 100%);
 }
 #home .case-study.smart-mirror .mask .logo {
-  background: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
+  background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
 #home .case-study.voice-search {
-  background: linear-gradient(135deg, #48021E 0%, #940404 100%);
+  background-image: linear-gradient(135deg, #48021E 0%, #940404 100%);
 }
 #home .case-study.voice-search .mask .logo {
-  background: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
+  background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
 #home .case-study {
 	background: #6B7995;
@@ -1021,7 +1021,7 @@ section {
   width: 35%;
   height: 100%;
 }
-.#home .case-study .mask .logo:after {
+#home .case-study .mask .logo:after {
   left: auto;
   right: 0;
 }
