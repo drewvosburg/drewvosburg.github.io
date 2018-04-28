@@ -775,8 +775,9 @@ section {
   transition: transform 1s, opacity 0.5s;
 }
 .rollcage.hidden {
-  transform: translateZ(-20rem) rotateX(-30deg) translateZ(20rem);
+  transform: translateZ(-20rem) rotateX(-15deg) translateZ(20rem);
   opacity: 0;
+  will-change: opacity, transform;
 }
 
 /* HOME */

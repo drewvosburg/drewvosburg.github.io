@@ -319,6 +319,30 @@
 	</footer>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+
+
+	<!-- HIDE HIDDEN SECIONTS -->
+	<script type="text/javascript">
+		
+		var rollcages = document.getElementsByClassName('rollcage');
+		var scrollTop = document.documentElement.scrollTop;
+		function getRollcages() {
+			rollcages.forEach(function(element){
+				if (element.getBoundingClientRect().top > scrollTop) {
+					element.classList.add('hidden');
+				}
+			})
+		}
+		window.onload = function(){
+			getRollcages();
+		}
+
+	</script>
+	<!-- SCROLL ACTIVATION SCRIPT -->
+	<script type="text/javascript">
+		
+	</script>
 </body>
 
 <!--
