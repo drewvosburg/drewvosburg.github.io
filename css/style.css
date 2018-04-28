@@ -816,15 +816,18 @@ footer h5 {
   animation: backCoin 10s infinite;
   background: #6B7995;
   overflow: hidden;
+  z-index: -1;
 }
 .coin .back video {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  margin-top: -50%;
+  margin-left: -50%;
   min-height: 100%;
   min-width: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;;
+  width: auto; 
+  height: auto;
 }
 @keyframes frontCoin {
     0%   {transform: rotateY(0deg);}
