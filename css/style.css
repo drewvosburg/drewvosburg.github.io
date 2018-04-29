@@ -948,6 +948,9 @@ section {
 #home .case-study.voice-search a.button.medium {
   color: #940404;
 }
+#home .case-study.voice-search .mask {
+  transform: scale(40, 40);
+}
 #home .case-study.voice-search .mask .logo {
   background-image: url('https://storage.googleapis.com/media.drewvosburg.com/voice-cutout.svg');
 }
