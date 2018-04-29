@@ -1044,7 +1044,7 @@ section {
 #home .case-study .mask .logo:before,
 #home .case-study .mask .logo:after {
   top: 0;
-  width: 35%;
+  width: 25%;
   height: 100%;
 }
 #home .case-study .mask .logo:after {
@@ -1069,6 +1069,10 @@ section {
 		padding: 4rem 0;
 		margin-bottom: 4rem;
 	}
+  #home .case-study .mask .logo:before,
+  #home .case-study .mask .logo:after {
+    width: 35%;
+  }
 	#home .hero {
 		text-align: initial;
 		padding: 10rem 0;
