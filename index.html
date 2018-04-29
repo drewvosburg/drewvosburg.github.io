@@ -360,7 +360,6 @@
 				}
 			}
 			caseStudies = document.getElementsByClassName('case-study hidden');
-			console.log(caseStudies);
 		}
 
 		window.onload = function(){
@@ -370,14 +369,13 @@
 
 		/* SCROLL EVENT */
 		window.onscroll = function(){
-			console.log(scrollTop);
 			for (var i = 0; i < rollcages.length; i++) {
 				if (rollcages[i].getBoundingClientRect().top < triggerPoint) {
 					rollcages[i].classList.remove('hidden');
 				}
 			}
 			for (var j = 0; j < caseStudies.length; j++) {
-				if (screen.height - (.75 * caseStudies[i].getBoundingClientRect().height) < cardTriggerPoint) {
+				if (screen.height - (.75 * caseStudies[j].getBoundingClientRect().height) < cardTriggerPoint) {
 					caseStudies[j].classList.remove('hidden');
 				}
 			}
