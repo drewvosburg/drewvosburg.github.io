@@ -355,7 +355,7 @@
 		}
 		function getCaseStudies() {
 			for (var i = 0; i < caseStudies.length; i++) {
-				if (screen.height - (.75 * caseStudies[j].getBoundingClientRect().height) > caseStudies[j].getBoundingClientRect().top) {
+				if (screen.height - (.75 * caseStudies[i].getBoundingClientRect().height) > caseStudies[j].getBoundingClientRect().top) {
 					caseStudies[i].classList.add('hidden','animate');
 				}
 			}
@@ -375,9 +375,9 @@
 				}
 			}
 			console.log(screen.height, caseStudies[0].getBoundingClientRect().height, cardTriggerPoint)
-			for (var j = 0; j < caseStudies.length; j++) {
-				if (screen.height - (.75 * caseStudies[j].getBoundingClientRect().height) < caseStudies[j].getBoundingClientRect().top) {
-					caseStudies[j].classList.remove('hidden');
+			for (var i = 0; i < caseStudies.length; i++) {
+				if (screen.height - (.75 * caseStudies[i].getBoundingClientRect().height) < caseStudies[i].getBoundingClientRect().top) {
+					caseStudies[i].classList.remove('hidden');
 				}
 			}
 		}
