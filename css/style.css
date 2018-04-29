@@ -901,36 +901,57 @@ section {
 	margin-bottom: 3rem;
 	text-align: center;
 }
+
 #home .case-study.hologram {
 	background: linear-gradient(135deg, #00A5FF 0%, #FE17C2 100%);
+}
+#home .case-study.hologram a.button.medium {
+  color: #FE17C2;
 }
 #home .case-study.hologram .mask .logo {
   background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
+
 #home .case-study.newsy {
 	background-image: linear-gradient(135deg, #051521 0%, #41A5F0 100%);
 }
-#home .case-study.newsy .mask .logo {
-  background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
+#home .case-study.newsy a.button.medium {
+  color: #41A5F0;
 }
+#home .case-study.newsy .mask .logo {
+  background-image: url('https://storage.googleapis.com/media.drewvosburg.com/newsy-cutout.svg');
+}
+
 #home .case-study.wrigley-rooftops {
 	background: linear-gradient(135deg, #173029 0%, #0C662C 100%);
+}
+#home .case-study.wrigley-rooftops a.button.medium {
+  color: #0C662C;
 }
 #home .case-study.wrigley-rooftops .mask .logo {
   background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
+
 #home .case-study.smart-mirror {
   background: linear-gradient(135deg, #131E35 0%, #6B7995 100%);
+}
+#home .case-study.smart-mirror a.button.medium {
+  color: #6B7995;
 }
 #home .case-study.smart-mirror .mask .logo {
   background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
+
 #home .case-study.voice-search {
   background-image: linear-gradient(135deg, #48021E 0%, #940404 100%);
+}
+#home .case-study.voice-search a.button.medium {
+  color: #940404;
 }
 #home .case-study.voice-search .mask .logo {
   background-image: url('https://storage.googleapis.com/media.drewvosburg.com/holo-cutout.svg');
 }
+
 #home .case-study {
 	background: #6B7995;
 	background-position: center;
