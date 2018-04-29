@@ -949,7 +949,7 @@ section {
   color: #940404;
 }
 #home .case-study.voice-search .mask {
-  transform: scale(40, 40);
+  transform: scale(40, 40)!important;
 }
 #home .case-study.voice-search .mask .logo {
   background-image: url('https://storage.googleapis.com/media.drewvosburg.com/voice-cutout.svg');
