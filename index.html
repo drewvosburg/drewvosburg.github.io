@@ -265,28 +265,28 @@
 			<h2>Other Work</h2>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><video autoplay loop muted webkit-playsinline playsinline>
-  <source src="https://storage.googleapis.com/media.drewvosburg.com/data-spaces.mp4" type="video/mp4"></video></div>
-					<div class="col-xs-12 col-sm-6 col-lg-5"><video autoplay loop muted webkit-playsinline playsinline>
-  <source src="https://storage.googleapis.com/media.drewvosburg.com/onboarding.mp4" type="video/mp4"></video></div>
+					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><a href="https://developers.google.com/speed/pagespeed/insights/?url=drewvosburg.com" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/data-spaces.mp4" type="video/mp4"></video></a></div>
+					<div class="col-xs-12 col-sm-6 col-lg-5"><a href="https://dribbble.com/shots/2362104-Onboarding-Day-023" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/onboarding.mp4" type="video/mp4"></video></a></div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><video autoplay loop muted webkit-playsinline playsinline>
-  <source src="https://storage.googleapis.com/media.drewvosburg.com/leaderboard.mp4" type="video/mp4"></video></div>
-					<div class="col-xs-12 col-sm-6 col-lg-5"><video autoplay loop muted webkit-playsinline playsinline>
-  <source src="https://storage.googleapis.com/media.drewvosburg.com/blog.mp4" type="video/mp4"></video></div>
+					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><a href="https://dribbble.com/shots/2350348-Leaderboard-Day-019" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/leaderboard.mp4" type="video/mp4"></video></a></div>
+					<div class="col-xs-12 col-sm-6 col-lg-5"><a href="https://dribbble.com/shots/2402082-Blog-Post-Day-035" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/blog.mp4" type="video/mp4"></video></a></div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><video autoplay loop muted webkit-playsinline playsinline>
-  <source src="https://storage.googleapis.com/media.drewvosburg.com/wifi-settings.mp4" type="video/mp4"></video></div>
-					<div class="col-xs-12 col-sm-6 col-lg-5"><video autoplay loop muted webkit-playsinline playsinline>
-  <source src="https://storage.googleapis.com/media.drewvosburg.com/special-offer.mp4" type="video/mp4"></video></div>
+					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><a href="https://dribbble.com/shots/2318540-Settings-Day-007" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/wifi-settings.mp4" type="video/mp4"></video></a></div>
+					<div class="col-xs-12 col-sm-6 col-lg-5"><a href="https://dribbble.com/shots/2407778-Special-Offer-Day-036" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/special-offer.mp4" type="video/mp4"></video></a></div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><video autoplay loop muted webkit-playsinline playsinline>
-  <source src="https://storage.googleapis.com/media.drewvosburg.com/location-tracking.mp4" type="video/mp4"></video></div>
-					<div class="col-xs-12 col-sm-6 col-lg-5"><video autoplay loop muted webkit-playsinline playsinline>
-  <source src="https://storage.googleapis.com/media.drewvosburg.com/simple-siri.mp4" type="video/mp4"></video></div>
+					<div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><a href="https://dribbble.com/shots/2351984-Location-Tracker-Day-020" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/location-tracking.mp4" type="video/mp4"></video></a></div>
+					<div class="col-xs-12 col-sm-6 col-lg-5"><a href="https://dribbble.com/shots/2331075-Simple-Siri-for-Chrome" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/simple-siri.mp4" type="video/mp4"></video></a></div>
 				</div>
 
 				<div class="flourish south west">
@@ -343,7 +343,6 @@
 		var cardTriggerPoint = screen.height * .25;
 		var rollcages = document.getElementsByClassName('rollcage');
 		var caseStudies = document.getElementsByClassName('case-study');
-		var scrollTop = document.documentElement.scrollTop;
 
 		function getRollcages() {
 			for (var i = 0; i < rollcages.length; i++) {
@@ -360,7 +359,6 @@
 				}
 			}
 			caseStudies = document.getElementsByClassName('case-study hidden');
-			console.log(caseStudies);
 		}
 
 		window.onload = function(){
