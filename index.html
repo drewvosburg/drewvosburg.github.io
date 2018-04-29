@@ -374,6 +374,7 @@
 					rollcages[i].classList.remove('hidden');
 				}
 			}
+			console.log(screen.height, caseStudies[0].getBoundingClientRect().height, cardTriggerPoint)
 			for (var j = 0; j < caseStudies.length; j++) {
 				if (screen.height - (.75 * caseStudies[j].getBoundingClientRect().height) < cardTriggerPoint) {
 					caseStudies[j].classList.remove('hidden');
