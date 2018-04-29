@@ -355,7 +355,7 @@
 		}
 		function getCaseStudies() {
 			for (var i = 0; i < caseStudies.length; i++) {
-				if (screen.height - (.75 * caseStudies[i].getBoundingClientRect().height) > caseStudies[j].getBoundingClientRect().top) {
+				if (screen.height - (.75 * caseStudies[i].getBoundingClientRect().height) > caseStudies[i].getBoundingClientRect().top) {
 					caseStudies[i].classList.add('hidden','animate');
 				}
 			}
