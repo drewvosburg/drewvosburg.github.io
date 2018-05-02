@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Some dumb basic meta junk -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="Thanks">
+  <link rel="canonical" href="https://www.drewvosburg.com/">
+  <link rel="shortlink" href="https://www.drewvosburg.com/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Page title that shows up in tabs etc -->
+  <title>Drew Vosburg</title>
+
+  <!-- DNS Prefetch to speed up page load -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Thanks!">
+  <meta property="og:description" content="Drew Vosburg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.drewvosburg.com/">
+  <meta property="og:site_name" content="Drew Vosburg">
+  <meta property="og:image" content="https://storage.googleapis.com/media.drewvosburg.com/card-image.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@drewvosburg">
+  <meta name="twitter:title" content="Thanks!">
+  <meta name="twitter:description" content="Drew Vosburg">
+
+  <style type="text/css">
+    
+    html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+.thecontent {
+  font-family: "Merriweather", serif;
+  font-display: optional;
+  color: #04060A;
+  line-height: 1.75;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin: 8px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-display:optional;
+}
+h1, .h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h2, .h2 {
+  font-size: 1.875rem;
+  font-weight: 200;
+  line-height: 1.29;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h3, .h3 {
+  font-size: 1.375rem;
+  font-weight: 200;
+  line-height: 1.25;
+}
+h4, .h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1875rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+h5, .h5, figcaption {
+  font-size: 0.73rem;
+  letter-spacing: 0.016rem;
+  line-height: 1.5rem;
+}
+h6, .h6 {
+  font-size: 0.54rem;
+  letter-spacing: 0.063rem;
+  line-height: 1.5rem;
+}
+p, figure {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+hr {
+    margin: 1rem 0;
+    width: 100%;
+    height: 0px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #EAEBED;
+}
+
+@media only screen and (min-width: 48em) {
+  .thecontent {
+    font-size: 1.13rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 8px 0;
+  }
+  h1 {
+    font-size: 4.75rem;
+    line-height: 1.07;
+  }
+  h2 {
+    font-size: 2.94rem;
+    line-height: 1.15;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h3 {
+    font-size: 1.81rem;
+    line-height: 1.24;
+  }
+  h4 {
+    font-size: 1.125rem;
+    letter-spacing: 0.25rem;
+    line-height: 1.5;
+  }
+  h5, figcaption {
+    font-size: 0.611rem;
+    letter-spacing: 0.016rem;
+    line-height: 1.688rem;
+  }
+  h6 {
+    font-size: 0.389rem;
+    letter-spacing: 0.063rem;
+    line-height: 1.688rem;
+  }
+}
+
+#bigSplash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
+  display: table;
+  animation-name: splashElement;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+#bigSplash h1 {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1;
+  animation-name: splashText;
+  animation-duration: .75s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes splashText {
+  from {transform: translateY(0) scale(1);}
+  to {transform: translateY(1em) scale(0.75);}
+}
+@keyframes splashElement {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-45vh);
+  }
+}
+@keyframes theContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.thecontent {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  opacity: 0;
+  animation-name: theContent;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 6rem;
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 48em) {
+  .thecontent {
+    margin-top: 10rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+ 
+
+  <div id="bigSplash"><h1>Great to meet you!</h1></div>
+<div class="thecontent">
+  <p>Nick,</p>
+  <p>I'm so glad that you took the time to talk with me today! I am pumped about the opportunity to work with Mess, and I am pumped about becoming an essential part of the team.</p>
+  <p>Don't hesitate to send me more info about working on a freelance basis. I'm available pretty much immediately for any amount of work you throw at me.</p>
+  <p>I know that since you guys are swamped with work, your time is pretty precious at this point, and it means a ton that you took the time to meet and talk more about your work at Mess and how I might fit in!</p>
+<p>Excited to hear from you,</p>
+  <h2>Drew</h2>
+</div>
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+</body>
+</html>
