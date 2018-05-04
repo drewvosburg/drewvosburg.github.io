@@ -59,7 +59,7 @@ header, main, footer {
       \/		grid system, so I want to keep the base font size
       			(1rem) a multiple of 8.  I left it at 16px because
       			it's a sane font size, but now I can change the size
-      			of the main text independently of the "rem" unit,
+      			of the main text independently of the "rem" unit, 
       			which I use EXTENSIVELY for layout throught this doc.
 */
 
@@ -885,11 +885,12 @@ section {
 }
 #home .hero .profile-picture .photo {
 	border-radius: 100%;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    float: left;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  float: left;
 	background: #EAEBED;
+  position: absolute;
 }
 #home .case-studies, #home .other-work {
 	padding-top: 4rem;
