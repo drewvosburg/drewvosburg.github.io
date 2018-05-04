@@ -809,8 +809,6 @@ section {
 	margin-bottom: 1.5rem;
 }
 #home .hero .profile-picture {
-	margin-bottom: 1rem;
-	margin-top: -1rem;
   position: absolute;
   top: 0;
 }
@@ -820,9 +818,11 @@ section {
   clear: both;
 }
 .coin {
-    width: 60%;
-    margin: 0 auto;
-    perspective: 32rem;
+  width: 60%;
+  margin: 0 auto;
+  perspective: 32rem;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
 }
 .coin .front, .coin .back {
   animation: frontCoin 20s infinite;
