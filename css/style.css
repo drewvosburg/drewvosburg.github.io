@@ -894,6 +894,8 @@ section {
   float: left;
 	background: #EAEBED;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 #home .case-studies, #home .other-work {
 	padding-top: 4rem;
