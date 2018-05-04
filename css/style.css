@@ -810,6 +810,7 @@ section {
 }
 #home .hero .profile-picture {
   position: absolute;
+  background: #EAEBED;
   top: 0;
   left: 0;
 }
@@ -892,7 +893,6 @@ section {
   max-width: 100%;
   height: auto;
   float: left;
-	background: #EAEBED;
   position: absolute;
   top: 0;
   left: 0;
