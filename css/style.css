@@ -811,7 +811,8 @@ section {
 #home .hero .profile-picture {
 	margin-bottom: 1rem;
 	margin-top: -1rem;
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 #home .hero .profile-picture:after {
   content: '';
