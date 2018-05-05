@@ -899,8 +899,8 @@ section {
   left: 0;
 }
 #home .hero .profile-picture .photo.blur {
-  -webkit-filter: blur(1rem);
-  filter: blur(1rem);
+  -webkit-filter: blur(0.25rem);
+  filter: blur(0.25rem);
 }
 #home .case-studies, #home .other-work {
 	padding-top: 4rem;
