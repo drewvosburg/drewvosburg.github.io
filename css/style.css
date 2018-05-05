@@ -813,6 +813,7 @@ section {
   background: #EAEBED;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 #home .hero .profile-picture:after {
   content: '';
