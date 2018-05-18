@@ -194,7 +194,7 @@ a.button:after {
 	content: ' \00279E';
 }
 a.button.medium, a.button.big {
-	font-size: 0.73rem;
+	font-size: 1rem;
 	letter-spacing: 0.0625rem;
 	line-height: 2.5rem;
 	padding: 0 2rem;
