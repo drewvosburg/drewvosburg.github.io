@@ -1238,7 +1238,7 @@ main.case-study .hero h4 {
   padding-top: 70%;
   box-sizing: border-box;
 }
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 48em) {
   #actors_studio .hero-image {
     height: 150%;
     max-height: 667px;
