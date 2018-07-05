@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Give Feedback - Actors Studio</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cabin:700|Merriweather">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="screen">
+    <a class="button closeButton" href="./">Close</a>
+    <div class="swiper-container onboardingSwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="exercise-card">
+            <div class="invisibleCard">
+              <h3>Give Feedback</h3>
+              <p>This process is designed to sharpen feedback skills by focusing performers on the essentials of their coursework.</p>
+              <p>Feedback should be actionable, with suggested exercises and games that help strengthen each dimension of performance.</p>
+              <div class="buttonWrap"><a class="button nextButton">Begin</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="exercise-card">
+            <div class="cohortMember">
+              <div class="profilePic" style="background-image:url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+              <div class="m5">Feedback for</div>
+              <div class="m3">Tommy Fargo</div>
+            </div>
+            <div class="swiper-container ratingSwiper" id="member1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Physicality</h3>
+                    <div class="ratings">
+                      <input type="radio" name="phys_1" id="star1--phys_1" value="1"><label for="star1--phys_1" class="rating"></label>
+                      <input type="radio" name="phys_1" id="star2--phys_1" value="2"><label for="star2--phys_1" class="rating"></label>
+                      <input type="radio" name="phys_1" id="star3--phys_1" value="3"><label for="star3--phys_1" class="rating"></label>
+                      <input type="radio" name="phys_1" id="star4--phys_1" value="4"><label for="star4--phys_1" class="rating"></label>
+                      <input type="radio" name="phys_1" id="star5--phys_1" value="5"><label for="star5--phys_1" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Emotion and Believability</h3>
+                    <div class="ratings">
+                      <input type="radio" name="emo_1" id="star1--emo_1" value="1"><label for="star1--emo_1" class="rating"></label>
+                      <input type="radio" name="emo_1" id="star2--emo_1" value="2"><label for="star2--emo_1" class="rating"></label>
+                      <input type="radio" name="emo_1" id="star3--emo_1" value="3"><label for="star3--emo_1" class="rating"></label>
+                      <input type="radio" name="emo_1" id="star4--emo_1" value="4"><label for="star4--emo_1" class="rating"></label>
+                      <input type="radio" name="emo_1" id="star5--emo_1" value="5"><label for="star5--emo_1" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Ensemble</h3>
+                    <div class="ratings">
+                      <input type="radio" name="ensbl_1" id="star1--ensbl_1" value="1"><label for="star1--ensbl_1" class="rating"></label>
+                      <input type="radio" name="ensbl_1" id="star2--ensbl_1" value="2"><label for="star2--ensbl_1" class="rating"></label>
+                      <input type="radio" name="ensbl_1" id="star3--ensbl_1" value="3"><label for="star3--ensbl_1" class="rating"></label>
+                      <input type="radio" name="ensbl_1" id="star4--ensbl_1" value="4"><label for="star4--ensbl_1" class="rating"></label>
+                      <input type="radio" name="ensbl_1" id="star5--ensbl_1" value="5"><label for="star5--ensbl_1" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Taking Direction</h3>
+                    <div class="ratings">
+                      <input type="radio" name="drctn_1" id="star1--drctn_1" value="1"><label for="star1--drctn_1" class="rating"></label>
+                      <input type="radio" name="drctn_1" id="star2--drctn_1" value="2"><label for="star2--drctn_1" class="rating"></label>
+                      <input type="radio" name="drctn_1" id="star3--drctn_1" value="3"><label for="star3--drctn_1" class="rating"></label>
+                      <input type="radio" name="drctn_1" id="star4--drctn_1" value="4"><label for="star4--drctn_1" class="rating"></label>
+                      <input type="radio" name="drctn_1" id="star5--drctn_1" value="5"><label for="star5--drctn_1" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Preparation</h3>
+                    <div class="ratings">
+                      <input type="radio" name="prep_1" id="star1--prep_1" value="1"><label for="star1--prep_1" class="rating"></label>
+                      <input type="radio" name="prep_1" id="star2--prep_1" value="2"><label for="star2--prep_1" class="rating"></label>
+                      <input type="radio" name="prep_1" id="star3--prep_1" value="3"><label for="star3--prep_1" class="rating"></label>
+                      <input type="radio" name="prep_1" id="star4--prep_1" value="4"><label for="star4--prep_1" class="rating"></label>
+                      <input type="radio" name="prep_1" id="star5--prep_1" value="5"><label for="star5--prep_1" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container rubric-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Specific choices are made as to how and when to move based on the characters needs and style of the scene.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>General choices are made as to how and when to move based on the characters needs and style of the scene. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Some choices are made as to how and when to move but some unmotivated movement as well.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Movement is choppy and feels unmotivated overall and/or does not relate to the character or the style of the scene at all.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Very little movement and/or movement that does not relate to the character or the style of the scene at all.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is believable and matches the character, play and style. Strong choices are made to create character fully.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is believable and mostly matches two of the three (character, play and style). Good choices are made to create character.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is somewhat believable and sometimes matches one of the three (character, play and style). Character is not constant and/or choices were not strong.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is not motivated and does not match character, play or style. Limited characterization&#8212breaking of character during the scene. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is missing. Character is not present.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is very focused all the time. Giving and taking throughout.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused most of the time. Giving and taking most of the time. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused some of the time. Giving and taking some of the time.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused a small percentage of the time. Not giving and taking. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is not focused at all. There is no give and take with other actors.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Always follows instructions and completes tasks directly. Does not need to be asked more than once to do something. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Mostly follows instructions or completes tasks directly. Rarely needs to be asked more than once to do something. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Sometimes doesn't follow instructions or completes tasks directly. Sometimes needs to be asked more than once to do something.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Doesn't follow instructions or complete tasks directly. Need to be asked more than once to do something and often doesn't put a full effort into completing task. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Doesn't follow instructions or complete tasks. Continually, needs to be asked to do something. Task is done poorly, or not at all. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>All lines are correct, fluid and display a command of the scene.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>All but a few lines are correct and the scene is fluid.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Some choppiness and some lack of fluidity, needs more rehearsal.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Scene is choppy, many line errors, needs much more rehearsal. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Scene is not memorized.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exercise-card">
+            <div class="cohortMember">
+              <div class="profilePic" style="background-image:url('https://randomuser.me/api/portraits/women/21.jpg')"></div>
+              <div class="m5">Feedback for</div>
+              <div class="m3">Jill Solver</div>
+            </div>
+            <div class="swiper-container ratingSwiper" id="member2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Physicality</h3>
+                    <div class="ratings">
+                      <input type="radio" name="phys_2" id="star1--phys_2" value="1"><label for="star1--phys_2" class="rating"></label>
+                      <input type="radio" name="phys_2" id="star2--phys_2" value="2"><label for="star2--phys_2" class="rating"></label>
+                      <input type="radio" name="phys_2" id="star3--phys_2" value="3"><label for="star3--phys_2" class="rating"></label>
+                      <input type="radio" name="phys_2" id="star4--phys_2" value="4"><label for="star4--phys_2" class="rating"></label>
+                      <input type="radio" name="phys_2" id="star5--phys_2" value="5"><label for="star5--phys_2" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Emotion and Believability</h3>
+                    <div class="ratings">
+                      <input type="radio" name="emo_2" id="star1--emo_2" value="1"><label for="star1--emo_2" class="rating"></label>
+                      <input type="radio" name="emo_2" id="star2--emo_2" value="2"><label for="star2--emo_2" class="rating"></label>
+                      <input type="radio" name="emo_2" id="star3--emo_2" value="3"><label for="star3--emo_2" class="rating"></label>
+                      <input type="radio" name="emo_2" id="star4--emo_2" value="4"><label for="star4--emo_2" class="rating"></label>
+                      <input type="radio" name="emo_2" id="star5--emo_2" value="5"><label for="star5--emo_2" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Ensemble</h3>
+                    <div class="ratings">
+                      <input type="radio" name="ensbl_2" id="star1--ensbl_2" value="1"><label for="star1--ensbl_2" class="rating"></label>
+                      <input type="radio" name="ensbl_2" id="star2--ensbl_2" value="2"><label for="star2--ensbl_2" class="rating"></label>
+                      <input type="radio" name="ensbl_2" id="star3--ensbl_2" value="3"><label for="star3--ensbl_2" class="rating"></label>
+                      <input type="radio" name="ensbl_2" id="star4--ensbl_2" value="4"><label for="star4--ensbl_2" class="rating"></label>
+                      <input type="radio" name="ensbl_2" id="star5--ensbl_2" value="5"><label for="star5--ensbl_2" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Taking Direction</h3>
+                    <div class="ratings">
+                      <input type="radio" name="drctn_2" id="star1--drctn_2" value="1"><label for="star1--drctn_2" class="rating"></label>
+                      <input type="radio" name="drctn_2" id="star2--drctn_2" value="2"><label for="star2--drctn_2" class="rating"></label>
+                      <input type="radio" name="drctn_2" id="star3--drctn_2" value="3"><label for="star3--drctn_2" class="rating"></label>
+                      <input type="radio" name="drctn_2" id="star4--drctn_2" value="4"><label for="star4--drctn_2" class="rating"></label>
+                      <input type="radio" name="drctn_2" id="star5--drctn_2" value="5"><label for="star5--drctn_2" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Preparation</h3>
+                    <div class="ratings">
+                      <input type="radio" name="prep_2" id="star1--prep_2" value="1"><label for="star1--prep_2" class="rating"></label>
+                      <input type="radio" name="prep_2" id="star2--prep_2" value="2"><label for="star2--prep_2" class="rating"></label>
+                      <input type="radio" name="prep_2" id="star3--prep_2" value="3"><label for="star3--prep_2" class="rating"></label>
+                      <input type="radio" name="prep_2" id="star4--prep_2" value="4"><label for="star4--prep_2" class="rating"></label>
+                      <input type="radio" name="prep_2" id="star5--prep_2" value="5"><label for="star5--prep_2" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container rubric-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Specific choices are made as to how and when to move based on the characters needs and style of the scene.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>General choices are made as to how and when to move based on the characters needs and style of the scene. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Some choices are made as to how and when to move but some unmotivated movement as well.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Movement is choppy and feels unmotivated overall and/or does not relate to the character or the style of the scene at all.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Very little movement and/or movement that does not relate to the character or the style of the scene at all.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is believable and matches the character, play and style. Strong choices are made to create character fully.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is believable and mostly matches two of the three (character, play and style). Good choices are made to create character.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is somewhat believable and sometimes matches one of the three (character, play and style). Character is not constant and/or choices were not strong.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is not motivated and does not match character, play or style. Limited characterization&#8212breaking of character during the scene. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is missing. Character is not present.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is very focused all the time. Giving and taking throughout.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused most of the time. Giving and taking most of the time. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused some of the time. Giving and taking some of the time.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused a small percentage of the time. Not giving and taking. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is not focused at all. There is no give and take with other actors.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Always follows instructions and completes tasks directly. Does not need to be asked more than once to do something. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Mostly follows instructions or completes tasks directly. Rarely needs to be asked more than once to do something. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Sometimes doesn't follow instructions or completes tasks directly. Sometimes needs to be asked more than once to do something.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Doesn't follow instructions or complete tasks directly. Need to be asked more than once to do something and often doesn't put a full effort into completing task. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Doesn't follow instructions or complete tasks. Continually, needs to be asked to do something. Task is done poorly, or not at all. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>All lines are correct, fluid and display a command of the scene.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>All but a few lines are correct and the scene is fluid.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Some choppiness and some lack of fluidity, needs more rehearsal.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Scene is choppy, many line errors, needs much more rehearsal. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Scene is not memorized.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exercise-card">
+            <div class="cohortMember">
+              <div class="profilePic" style="background-image:url('https://d3iw72m71ie81c.cloudfront.net/male-5.jpg')"></div>
+              <div class="m5">Feedback for</div>
+              <div class="m3">Calvin Kennedy</div>
+            </div>
+            <div class="swiper-container ratingSwiper" id="member3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Physicality</h3>
+                    <div class="ratings">
+                      <input type="radio" name="phys_3" id="star1--phys_3" value="1"><label for="star1--phys_3" class="rating"></label>
+                      <input type="radio" name="phys_3" id="star2--phys_3" value="2"><label for="star2--phys_3" class="rating"></label>
+                      <input type="radio" name="phys_3" id="star3--phys_3" value="3"><label for="star3--phys_3" class="rating"></label>
+                      <input type="radio" name="phys_3" id="star4--phys_3" value="4"><label for="star4--phys_3" class="rating"></label>
+                      <input type="radio" name="phys_3" id="star5--phys_3" value="5"><label for="star5--phys_3" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Emotion and Believability</h3>
+                    <div class="ratings">
+                      <input type="radio" name="emo_3" id="star1--emo_3" value="1"><label for="star1--emo_3" class="rating"></label>
+                      <input type="radio" name="emo_3" id="star2--emo_3" value="2"><label for="star2--emo_3" class="rating"></label>
+                      <input type="radio" name="emo_3" id="star3--emo_3" value="3"><label for="star3--emo_3" class="rating"></label>
+                      <input type="radio" name="emo_3" id="star4--emo_3" value="4"><label for="star4--emo_3" class="rating"></label>
+                      <input type="radio" name="emo_3" id="star5--emo_3" value="5"><label for="star5--emo_3" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Ensemble</h3>
+                    <div class="ratings">
+                      <input type="radio" name="ensbl_3" id="star1--ensbl_3" value="1"><label for="star1--ensbl_3" class="rating"></label>
+                      <input type="radio" name="ensbl_3" id="star2--ensbl_3" value="2"><label for="star2--ensbl_3" class="rating"></label>
+                      <input type="radio" name="ensbl_3" id="star3--ensbl_3" value="3"><label for="star3--ensbl_3" class="rating"></label>
+                      <input type="radio" name="ensbl_3" id="star4--ensbl_3" value="4"><label for="star4--ensbl_3" class="rating"></label>
+                      <input type="radio" name="ensbl_3" id="star5--ensbl_3" value="5"><label for="star5--ensbl_3" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Taking Direction</h3>
+                    <div class="ratings">
+                      <input type="radio" name="drctn_3" id="star1--drctn_3" value="1"><label for="star1--drctn_3" class="rating"></label>
+                      <input type="radio" name="drctn_3" id="star2--drctn_3" value="2"><label for="star2--drctn_3" class="rating"></label>
+                      <input type="radio" name="drctn_3" id="star3--drctn_3" value="3"><label for="star3--drctn_3" class="rating"></label>
+                      <input type="radio" name="drctn_3" id="star4--drctn_3" value="4"><label for="star4--drctn_3" class="rating"></label>
+                      <input type="radio" name="drctn_3" id="star5--drctn_3" value="5"><label for="star5--drctn_3" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Preparation</h3>
+                    <div class="ratings">
+                      <input type="radio" name="prep_3" id="star1--prep_3" value="1"><label for="star1--prep_3" class="rating"></label>
+                      <input type="radio" name="prep_3" id="star2--prep_3" value="2"><label for="star2--prep_3" class="rating"></label>
+                      <input type="radio" name="prep_3" id="star3--prep_3" value="3"><label for="star3--prep_3" class="rating"></label>
+                      <input type="radio" name="prep_3" id="star4--prep_3" value="4"><label for="star4--prep_3" class="rating"></label>
+                      <input type="radio" name="prep_3" id="star5--prep_3" value="5"><label for="star5--prep_3" class="rating"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container rubric-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Specific choices are made as to how and when to move based on the characters needs and style of the scene.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>General choices are made as to how and when to move based on the characters needs and style of the scene. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Some choices are made as to how and when to move but some unmotivated movement as well.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Movement is choppy and feels unmotivated overall and/or does not relate to the character or the style of the scene at all.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Very little movement and/or movement that does not relate to the character or the style of the scene at all.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is believable and matches the character, play and style. Strong choices are made to create character fully.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is believable and mostly matches two of the three (character, play and style). Good choices are made to create character.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is somewhat believable and sometimes matches one of the three (character, play and style). Character is not constant and/or choices were not strong.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is not motivated and does not match character, play or style. Limited characterization&#8212breaking of character during the scene. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Emotion is missing. Character is not present.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is very focused all the time. Giving and taking throughout.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused most of the time. Giving and taking most of the time. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused some of the time. Giving and taking some of the time.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is focused a small percentage of the time. Not giving and taking. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Performance is not focused at all. There is no give and take with other actors.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Always follows instructions and completes tasks directly. Does not need to be asked more than once to do something. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Mostly follows instructions or completes tasks directly. Rarely needs to be asked more than once to do something. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Sometimes doesn't follow instructions or completes tasks directly. Sometimes needs to be asked more than once to do something.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Doesn't follow instructions or complete tasks directly. Need to be asked more than once to do something and often doesn't put a full effort into completing task. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Doesn't follow instructions or complete tasks. Continually, needs to be asked to do something. Task is done poorly, or not at all. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rubric">
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>All lines are correct, fluid and display a command of the scene.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>All but a few lines are correct and the scene is fluid.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Some choppiness and some lack of fluidity, needs more rehearsal.</p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Scene is choppy, many line errors, needs much more rehearsal. </p>
+                    </div>
+                    <div class="rubricElement">
+                      <div class="ratings">
+                        <div class="rating filled"></div>
+                      </div>
+                      <p>Scene is not memorized.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exercise-card">
+            <div class="invisibleCard">
+              <h3>More in depth feedback</h3>
+              <p>You've been assigned a random member of your cohort to give more in depth feedback.</p>
+              <p>For each dimension, you will be asked to give specific games or exercises from class to help improve on that dimension.</p>
+              <div class="buttonWrap"><a class="button nextButton">Okay</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exercise-card">
+            <div class="cohortMember">
+              <div class="profilePic" style="background-image:url('https://d3iw72m71ie81c.cloudfront.net/male-5.jpg')"></div>
+              <div class="m5">Feedback for</div>
+              <div class="m3">Calvin Kennedy</div>
+            </div>
+            <div class="swiper-container detailFeedback">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Physicality</h3>
+                    <p>What exercise from class could be used to improve physicality?</p>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <button class="advance">Next</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Emotion and Believability</h3>
+                    <p>What exercise from class could be used to improve emotion and believability?</p>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <button class="advance">Next</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Ensemble</h3>
+                    <p>What exercise from class could be used to improve ensemble work?</p>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <button class="advance">Next</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Taking Direction</h3>
+                    <p>What exercise from class could be used to improve taking direction?</p>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <button class="advance">Next</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="miniCard">
+                    <h3>Preparation</h3>
+                    <p>What exercise from class could be used to improve preparation?</p>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <a class="button nextButton">Submit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exercise-card">
+            <div class="invisibleCard">
+              <h3>Feedback submitted</h3>
+              <p>Good work submitting feedback. Providing constructive, actionable critique is a crucial skill.</p>
+              <p>You can now view the feedback from your cohort on your performance this week.</p>
+              <div class="buttonWrap"><a class="button" href="./view_feedback">View Feedback</a></div>
+              <div class="buttonWrap"><a class="button light" href="./?success=true">Done</a></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+  <script type="text/javascript">
+    // ----- On render -----
+    $(function(){
+      var onboardingSwiper = new Swiper ('.onboardingSwiper',{
+        speed: 500,
+        navigation: {
+          nextEl: '.nextButton'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        noSwipingClass: 'swiper-container'
+      });
+      var detailFeedback = new Swiper('.detailFeedback',{
+        speed: 500,
+          spaceBetween: 48,
+        navigation: {
+          nextEl: '.advance'
+        }
+      });
+      
+      
+      var ratingSwipers = $('.ratingSwiper');
+      var rubricSwipers = $('.rubric-swiper');
+      var swiperStuff = [];
+      for (i = 0; i < ratingSwipers.length; i ++){
+        var ratingSwiper = new Swiper (ratingSwipers[i],{
+          speed: 500,
+          spaceBetween: 48
+        });
+        var rubricSwiper = new Swiper (rubricSwipers[i],{
+          speed: 500,
+          noSwipingClass: 'swiper-container'
+        });
+        ratingSwiper.controller.control = rubricSwiper;
+        swiperStuff.push({'el': ratingSwipers[i].id, 'rating': ratingSwiper, 'rubric': rubricSwiper})
+      }
+      
+     
+      var dayStartChooser = new Swiper ('.dayStartChooser',{
+        slidesPerView: 3
+      });
+      $('input[type=radio]').change(function(){
+        $(this).parent().addClass('selected');
+        var thisSwiperEl = $(this).closest('.ratingSwiper')[0].id;
+        for (j = 0; j < swiperStuff.length; j ++) {
+          if (swiperStuff[j].el === thisSwiperEl) {
+            thisSwiperEl = swiperStuff[j].rating;
+            break;
+          }
+        }
+        var thisSwiper = thisSwiperEl;
+        setTimeout(function(){
+          if(thisSwiper.isEnd) {
+            onboardingSwiper.slideNext();
+          } else {
+            thisSwiper.slideNext();
+          }
+        }, 300);
+      })
+    });
+  </script>
+</body>
+</html>

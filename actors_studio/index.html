@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard - Actors Studio</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cabin:700|Merriweather">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="screen">
+    <div class="dashboard">
+      <div class="header">
+        <h3 class="logo">Actors Studio</h3>
+        <div class="account m5">Chelsea Peters
+          <div class="profilePic" style="background-image:url('https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb')"></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="noShowOnFirst">Feedback available!</h3>
+        <h3 class="showOnFirst">Give Feedback</h3>
+        <p class="showOnFirst">Providing actionable, specific critique is an important skill for performers to master.</p>
+        <p class="noShowOnFirst">Members of your cohort have given you feedback on your performance this week.</p>
+        <p class="noShowOnSuccess noShowOnFirst">To view what they said, first give feedback for your cohort's performance this week.</p>
+        <a class="noShowOnSuccess button" href="./feedback">Give Feedback Now</a>
+        <a class="showOnSuccess noShowOnFirst button" href="./view_feedback">View Feedback</a>
+      </div>
+      <div class="message" id="success">
+        You've already left feedback this week. Great work!
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script type="text/javascript">
+    // ----- On render -----
+    $(function(){
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var c = url.searchParams.get("success");
+      var d = url.searchParams.get("first");
+      if (c) {
+        document.getElementsByClassName('screen')[0].classList.add('success')
+      } else if (d) {
+        document.getElementsByClassName('screen')[0].classList.add('first')
+      }
+    });
+  </script>
+</body>
+</html>

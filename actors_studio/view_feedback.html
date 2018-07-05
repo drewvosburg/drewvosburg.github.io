@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Feedback - Actors Studio</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cabin:700|Merriweather">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="screen">
+    <a class="button closeButton" href="./?success=true">Close</a>
+    <div class="swiper-container onboardingSwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="exercise-card overflowPossible">
+            <div class="invisibleCard">
+              <h3>Feedback from your cohort</h3>
+              <p>There aren't any numbers in this feedback. The goal is to provide useful ways to continue to improve, not to reduce your performance to a number.</p>
+              <p>You also won't see the names of any individuals giving you feedback. These notes are meant to be instructive, not quantitative, personal or offensive.</p>
+              <div class="buttonWrap"><a class="button nextButton">Next</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exercise-card overflowPossible">
+            <div class="invisibleCard">
+              <h3>Overview</h3>
+              <p>You did a great job making specific choices with your stage presence.</p>
+              <p>While at times you were focused and engaged with your scene partner, more give and take will help both performers. Make sure you are listening. Working as a team will help the true scene emerge.</p>
+              <p>Part of a scene is presenting a work of theater with fidelity. A lack of memorization and unpreparedness is unprofessional and insulting to your scene partner and the cohort.</p>
+              <p>You are here to learn from your cohort members and instructor. Commit fully with an open mind. Your piece won’t progress without open dialogue and willingness to try new approaches.</p>
+              <p>Continue to make strong choices when developing your character, connecting mentally and emotionally to create a believable person, using the written character, play, and style to help guide your choices.</p>
+              <div class="buttonWrap"><a class="button nextButton">Next</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="exercise-card overflowPossible">
+            <div class="invisibleCard" id="feedbackOptions">
+              <h3>For what area(s) would exercise recommondations be most helpful this week?</h3>
+              <input type="checkbox" id="physicality"><label for="physicality" class="selection">Physicality</label>
+
+              <input type="checkbox" id="emotion"><label for="emotion" class="selection">Emotion and Believability</label>
+
+              <input type="checkbox" id="ensemble"><label for="ensemble" class="selection">Ensemble Work</label>
+
+              <input type="checkbox" id="direction"><label for="direction" class="selection">Taking Direction</label>
+
+              <input type="checkbox" id="preparation"><label for="preparation" class="selection">Preparation</label>
+              <div class="buttonWrap"><a class="button nextButton">Next</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="specific">
+          <div class="exercise-card overflowPossible">
+            <div class="invisibleCard">
+              <h3>Specific recommendations</h3>
+              <p class="noFeedback">You asked not to receive any specific feedback this week.</p>
+              <p class="feedback_phys label">What exercise from class could be used to improve physicality?</p>
+              <p class="feedback_phys quote">Plating- movement warmup before scenes and throughout rehearsal</p>
+              <p class="feedback_emo label">What exercise from class could be used to improve emotion and believability?</p>
+              <p class="feedback_emo quote">Schreiber's Working Title- give the scene a working title, rehearse, repeat.</p>
+              <p class="feedback_ensemble label">What exercise from class could be used to improve ensemble work?</p>
+              <p class="feedback_ensemble quote">"Contact" - makes direct physical contact with your scene partner whenever they have a line.</p>
+              <p class="feedback_direction label">What exercise from class could be used to improve taking direction?</p>
+              <p class="feedback_direction quote">I would recommend the blah blah exercise from class to build up a good stage presence.</p>
+              <p class="feedback_preparation label">What exercise from class could be used to improve preparation?</p>
+              <p class="feedback_preparation quote">Try recording your partner's lines on your phone and play them to learn your lines in context.</p>
+              <div class="buttonWrap"><a class="button" href="./?success=true">Done</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+  <script type="text/javascript">
+    // ----- On render -----
+    $(function(){
+      var mainSwiper = new Swiper ('.onboardingSwiper',{
+        speed: 500,
+        navigation: {
+          nextEl: '.nextButton'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        noSwipingClass: 'swiper-container'
+      });
+      var showHideFeedback = function() {
+        var feedback = [];
+
+        if ($('#physicality').is(":checked")) {
+          $('#specific').addClass('feedback_phys');
+        } else {
+          $('#specific').removeClass('feedback_phys');
+        }
+
+        if ($('#emotion').is(":checked")) {
+          $('#specific').addClass('feedback_emo');
+        } else {
+          $('#specific').removeClass('feedback_emo');
+        }
+
+        if ($('#ensemble').is(":checked")) {
+          $('#specific').addClass('feedback_ensemble');
+        } else {
+          $('#specific').removeClass('feedback_ensemble');
+        }
+
+        if ($('#direction').is(":checked")) {
+          $('#specific').addClass('feedback_direction');
+        } else {
+          $('#specific').removeClass('feedback_direction');
+        }
+
+        if ($('#preparation').is(":checked")) {
+          $('#specific').addClass('feedback_preparation');
+        } else {
+          $('#specific').removeClass('feedback_preparation');
+        }
+      }
+      $('#feedbackOptions').change(showHideFeedback);
+    });
+  </script>
+</body>
+</html>
