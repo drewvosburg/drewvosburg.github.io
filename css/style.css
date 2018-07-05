@@ -1460,12 +1460,12 @@ main.case-study .hero h4 {
 main.case-study#voice-search {
 	padding-bottom: 3.5rem;
 }
-#voice-search p a, #smart-mirror p a {
+#voice-search p a, #smart-mirror p a, #actors_studio p a {
 	box-shadow: inset 0 -0.125em 0 #FFBA49;
     transition: all 0.2s;
     text-shadow:  0 0 0 2 #fff;
 }
-#voice-search p a:hover, #smart-mirror p a:hover {
+#voice-search p a:hover, #smart-mirror p a:hover, #actors_studio p a:hover {
 	box-shadow: inset 0 -0.9em 0 #FFBA49;
 }
 #voice-search img, #voice-search video {
