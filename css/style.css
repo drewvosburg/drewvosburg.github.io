@@ -257,15 +257,15 @@ a.button.big {
 
 
 /*
-	  /\
+	    /\
    __/\/\__ 	WHAT ARE MARKS
  /__/\!!/\__\
  \ -\/!!\/- /	See the four-color diamond in the upper left? What
     -\/\/-		about those little divider icons above the headers
-      \/		on the home page? Those are actually ALSO made with
-      			CSS. It's handy because I "rebrand" some of them on
-      			case study pages, similar to how you would with SVGs.
-      			I do this kind of thing because I can.
+      \/		  on the home page? Those are actually ALSO made with
+      			  CSS. It's handy because I "rebrand" some of them on
+      			  case study pages, similar to how you would with SVGs.
+      			  I do this kind of thing because I can.
 */
 
 .mark {
@@ -1230,6 +1230,21 @@ main.case-study .hero h4 {
 		padding-right: 0;
 	}
 }
+/* Hidden Case Study */
+#actors_studio .hero-image {
+  background-image: url(https://storage.googleapis.com/media.drewvosburg.com/actorStudioHero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 70%;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 32em) {
+  #actors_studio .hero-image {
+    height: 150%;
+    max-height: 667px;
+  }
+}
+
 /* Hidden Case Study */
 #shopfresh {
 	color: #211A1E;
