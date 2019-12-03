@@ -139,7 +139,7 @@
           <div class="col-xs-12 col-sm-6 col-lg-4 col-lg-offset-1">
             <div class="textbox">
               <div class="rollcage">
-                <h2>The Edge of Your Seat</h2>
+                <h2>The edge of your&nbsp;seat</h2>
                 <p>One of the goals of the site was to give visitors an idea of what it is like to be on each of the eleven properties.</p>
                 <p>Each building has a different vantage point, so we took a series of photos that we stitched into a 360 viewer. Now visitors can know exactly what they will see.</p>
               </div>
@@ -158,7 +158,7 @@
           <div class="col-xs-12 col-sm-6 col-lg-4 ">
             <div class="textbox">
               <div class="rollcage">
-                <h2>A Moving Experience</h2>
+                <h2>A moving experience</h2>
                 <p>One of our goals was to make this website stand out, and nothing does that better than good transitions.</p>
                 <p>The motion on scroll and page load helps the site feel fluid, dynamic, and memorable, while allowing the clean typography and layout to shine through.</p>
               </div>
@@ -177,7 +177,7 @@
           <div class="col-xs-12 col-sm-6 col-lg-4 col-lg-offset-1">
             <div class="textbox">
               <div class="rollcage">
-                <h2>Rethink, not Shrinky Dink</h2>
+                <h2>Rethink, not shrinky-dink</h2>
                 <p>Mobile first design is ideal, but sometimes it's necessary to turn a powerful desktop experience into an effortless flow on smaller screens.</p>
                 <p>I took a complex checkout flow and made it a seamless mobile experience, not just shrinking the interface, but capturing the core interaction.</p>
               </div>
@@ -225,7 +225,7 @@
 
     function getRollcages() {
       for (var i = 0; i < rollcages.length; i++) {
-        if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
+        if (rollcages[i].getBoundingClientRect().top > scrollTop + screen.height) {
           rollcages[i].classList.add('hidden','animate');
         }
       }

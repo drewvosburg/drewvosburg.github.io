@@ -134,7 +134,7 @@
           <div class="col-xs-12 col-sm-6 col-lg-4 col-lg-offset-1">
             <div class="textbox">
               <div class="rollcage">
-                <h2>Focused above the fold</h2>
+                <h2>Focused above the&nbsp;fold</h2>
                 <p>With news, impressions are everything. The headline, subhed, and sharing icons are given front billing. The video is allowed to peek generously from just below the fold to encourage scrolling down the page.</p>
               </div>
             </div>
@@ -169,7 +169,7 @@
           <div class="col-xs-12 col-sm-6 col-lg-4 col-lg-offset-1">
             <div class="textbox">
               <div class="rollcage">
-                <h2>Sticky sharing</h2>
+                <h2>Sticky&nbsp;sharing</h2>
                 <p>Social was fundamental to how Newsy does business. Getting a story out to the audience happened primarily through social channels and sharing by email.</p>
                 <p>Always-present buttons give readers the option to quickly show others what they are reading.</p>
               </div>
@@ -236,7 +236,7 @@
 
     function getRollcages() {
       for (var i = 0; i < rollcages.length; i++) {
-        if (rollcages[i].getBoundingClientRect().top > scrollTop + triggerPoint) {
+        if (rollcages[i].getBoundingClientRect().top > scrollTop + screen.height) {
           rollcages[i].classList.add('hidden','animate');
         }
       }

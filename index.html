@@ -352,13 +352,13 @@
   <!-- HIDE SECTIONS FOR SCROLL REVEALS -->
   <script type="text/javascript">
     var triggerPoint = screen.height * .75;
-    var cardTriggerPoint = screen.height * .25;
+    var cardTriggerPoint = screen.height * .5;
     var rollcages = document.getElementsByClassName('rollcage');
     var caseStudies = document.getElementsByClassName('case-study');
 
     function getRollcages() {
       for (var i = 0; i < rollcages.length; i++) {
-        if (rollcages[i].getBoundingClientRect().top > triggerPoint) {
+        if (rollcages[i].getBoundingClientRect().top > screen.height) {
           rollcages[i].classList.add('hidden','animate');
         }
       }
@@ -366,7 +366,7 @@
     }
     function getCaseStudies() {
       for (var i = 0; i < caseStudies.length; i++) {
-        if (caseStudies[i].getBoundingClientRect().top > cardTriggerPoint) {
+        if (caseStudies[i].getBoundingClientRect().top > screen.height) {
           caseStudies[i].classList.add('hidden','animate');
         }
       }
@@ -386,7 +386,7 @@
         }
       }
       for (var i = 0; i < caseStudies.length; i++) {
-        if (caseStudies[i].getBoundingClientRect().top < cardTriggerPoint) {
+        if (caseStudies[i].getBoundingClientRect().top < cardTriggerPoint + (caseStudies[i].clientHeight / 2)) {
           caseStudies[i].classList.remove('hidden');
         }
       }
