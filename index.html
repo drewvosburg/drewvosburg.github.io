@@ -380,6 +380,7 @@
 
     /* SCROLL EVENT */
     window.onscroll = function(){
+      console.log(caseStudies[0].getBoundingClientRect().top, cardTriggerPoint - (caseStudies[0].clientHeight / 2))
       for (var i = 0; i < rollcages.length; i++) {
         if (rollcages[i].getBoundingClientRect().top < triggerPoint) {
           rollcages[i].classList.remove('hidden');
