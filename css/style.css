@@ -906,6 +906,9 @@ section {
   -webkit-filter: blur(0.25rem);
   filter: blur(0.25rem);
 }
+#home .case-studies {
+  display: block;
+}
 #home .case-studies, #home .other-work {
   padding-top: 4rem;
 }
