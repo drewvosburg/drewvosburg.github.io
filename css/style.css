@@ -1012,19 +1012,22 @@ section {
   opacity: 0;
   pointer-events: none;
   will-change: transform, opacity;
+  transition: transform 0.5s cubic-bezier(0.5,0,.75,0), 0s opacity 1s;
 }
 #home .case-study.animate .mask {
-  transition: transform 0.5s cubic-bezier(0.5,0,.75,0), 0s opacity 1s;
+  transition: none;
 }
 #home .case-study.hidden .mask {
   transform: scale(1, 1);
   opacity: 1;
 }
 #home .case-study > .row {
+  transition: 0.5s opacity 0.3s;
+  will-change: opacity;
   opacity: 1;
 }
 #home .case-study.animate > .row {
-  transition: 0.5s opacity 0.3s;
+  transition: none;
   will-change: opacity;
 }
 #home .case-study.hidden > .row {
