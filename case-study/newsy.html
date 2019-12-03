@@ -230,13 +230,13 @@
 
   <!-- HIDE SECTIONS FOR SCROLL REVEALS -->
   <script type="text/javascript">
-    var triggerPoint = screen.height * .75;
+    var triggerPoint = window.innerHeight * .75;
     var rollcages = document.getElementsByClassName('rollcage');
     var scrollTop = document.documentElement.scrollTop;
 
     function getRollcages() {
       for (var i = 0; i < rollcages.length; i++) {
-        if (rollcages[i].getBoundingClientRect().top > scrollTop + screen.height) {
+        if (rollcages[i].getBoundingClientRect().top > window.innerHeight) {
           rollcages[i].classList.add('hidden','animate');
         }
       }
