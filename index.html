@@ -358,7 +358,7 @@
 
     function getRollcages() {
       for (var i = 0; i < rollcages.length; i++) {
-        if (rollcages[i].getBoundingClientRect().top > screen.height) {
+        if (rollcages[i].getBoundingClientRect().top > window.innerHeight) {
           rollcages[i].classList.add('hidden','animate');
         }
       }
