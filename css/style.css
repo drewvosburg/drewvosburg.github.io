@@ -768,7 +768,7 @@ footer h5 {
 /* TRANSITIONS */
 section {
   perspective: 64rem;
-  min-height: 50vh;
+  min-height: 55vh;
   display: flex;
   align-items: center;
 

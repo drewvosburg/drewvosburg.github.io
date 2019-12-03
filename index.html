@@ -386,7 +386,7 @@
         }
       }
       for (var i = 0; i < caseStudies.length; i++) {
-        if (caseStudies[i].getBoundingClientRect().bottom < cardTriggerPoint) {
+        if ((caseStudies[i].getBoundingClientRect().bottom < cardTriggerPoint) || (caseStudies[i].getBoundingClientRect().top < cardTriggerPoint *.25)) {
           caseStudies[i].classList.remove('hidden');
         }
       }
