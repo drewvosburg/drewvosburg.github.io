@@ -1162,6 +1162,9 @@ main.case-study .asset {
 main.case-study .asset.no-shadow {
   box-shadow: none;
 }
+main.case-study .asset.no-margin {
+  margin-bottom: 0rem;
+}
 main.case-study .asset:after {
   content: '';
   display: block;
@@ -1227,6 +1230,9 @@ main.case-study .hero h4 {
   }
   main.case-study .asset.two-up {
     margin-bottom: 2rem;
+  }
+  main.case-study .asset.two-up.no-margin {
+    margin-bottom: 0rem;
   }
   main.case-study h2 {
     margin-bottom: 2rem;
