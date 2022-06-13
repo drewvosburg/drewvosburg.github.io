@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<!--
+      ___           ___           ___       ___       ___     
+     /\__\         /\  \         /\__\     /\__\     /\  \    
+    /:/  /        /::\  \       /:/  /    /:/  /    /::\  \   
+   /:/__/        /:/\:\  \     /:/  /    /:/  /    /:/\:\  \  
+  /::\  \ ___   /::\~\:\  \   /:/  /    /:/  /    /:/  \:\  \ 
+ /:/\:\  /\__\ /:/\:\ \:\__\ /:/__/    /:/__/    /:/__/ \:\__\
+ \/__\:\/:/  / \:\~\:\ \/__/ \:\  \    \:\  \    \:\  \ /:/  /
+      \::/  /   \:\ \:\__\    \:\  \    \:\  \    \:\  /:/  / 
+      /:/  /     \:\ \/__/     \:\  \    \:\  \    \:\/:/  /  
+     /:/  /       \:\__\        \:\__\    \:\__\    \::/  /   
+     \/__/         \/__/         \/__/     \/__/     \/__/    
+
+    THANKS FOR LOOKING AT MY SOURCE CODE!
+
+    I've highlighted what I think are the most interesting
+    bits of my code with this symbol:
+
+          /\
+       __/\/\__
+     /__/\!!/\__\
+     \ -\/!!\/- /
+        -\/\/-
+          \/
+
+    Scroll down, and enjoy!
+ -->
+
+<head>
+  <!-- Some dumb basic meta junk -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="Facebook Case Study - Drew Vosburg, Senior Product Designer">
+  <link rel="canonical" href="https://www.drewvosburg.com/">
+  <link rel="shortlink" href="https://www.drewvosburg.com/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <!-- Page title that shows up in tabs etc -->
+  <title>Facebook Case Study - Drew Vosburg</title>
+
+  <!-- DNS Prefetch to speed up page load -->
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//storage.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+  <!-- Core style links -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <!--                                                  ^
+                                                        |
+          /\                                            |
+       __/\/\__     ____________________________________|
+     /__/\!!/\__\
+     \ -\/!!\/- /   THIS IS MY MAIN STYLE SHEET
+        -\/\/-  
+          \/        Almost all of my favorite stuff on
+                    this site is in this file!
+-->
+
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Facebook Case Study">
+  <meta property="og:description" content="Senior Product Designer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.drewvosburg.com/case-study/catalog-and-commerce">
+  <meta property="og:site_name" content="Drew Vosburg">
+  <meta property="og:image" content="https://storage.googleapis.com/media.drewvosburg.com/newsy-card-image.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@drewvosburg">
+  <meta name="twitter:title" content="Facebook Case Study">
+  <meta name="twitter:description" content="Senior Product Designer">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="home-link" href="/">
+            <div class="diamond mark"></div> Drew Vosburg
+          </a>
+          <nav>
+            <a href="/#work">Work</a>
+            <a href="/resume">Resume</a>
+            <a class="contact button" href="mailto:drew.vosburg@gmail.com">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="catalog" class="case-study">
+    <section class="hero">
+      <div class="container">
+        <div class="flourish north west">
+          <div class="cropmarks"></div>
+          <div class="circles"></div>
+        </div>
+        <div class="flourish north east">
+          <div class="registration"><div class="target"></div></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1">
+            <h1>Facebook Commerce and Ad Catalog merger</h1>
+            <h4>Senior Product Designer</h4>
+            <div class="rollcage">
+              <p>Two business-facing tools were merged into one, simplifying and strengthening the Facebook commerce experience.</p>
+              <div class="diamond mark"></div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 last-sm first-xs col-sm-6 col-lg-4">
+            <div class="hero-image-container">
+              <div class="hero-image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-8 col-lg-offset-2">
+            <div class="rollcage">
+              <h2>The Problem</h2>
+              <p>Facebook’s business tools for commerce and advertising were fragmented.</p>
+              <p>Several key user tasks were duplicated across multiple tools, with similar concepts that weren’t compatible with each other.</p>
+              <p>Some tasks forced users to switch between platforms in the middle of the workflow, taking up to ten seconds to load, and leaving users stranded in the wrong tool when they were done.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-8 col-lg-offset-2">
+            <div class="rollcage">
+              <h2>Constraints</h2>
+              <p>The stakes for making a change were high. It was critical not to hurt ads revenue or sales with any new experience, and the rollout affected critical revenue for over half a million businesses.</p>
+              <p>User personas were complex and elusive. Some edge-case businesses have hundreds of catalogs, multiple commerce accounts, Instagram handles and Facebook pages. Other businesses only run ads and never use additional commerce tools. Navigation needed to remain useful for both users.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 last-sm first-xs col-sm-6 col-lg-7 col-lg-offset-1">
+            <div class="asset"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.cloud.google.com/media.drewvosburg.com/navigation.mp4" type="video/mp4"></video></div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 ">
+            <div class="textbox">
+              <div class="rollcage">
+                <h2>Pare down</h2>
+                <p>I broke down navigation for the two tools, compared and contrasted, then merged them together.</p>
+                <p>This reduced the mental model for users, and as a bonus cut down the technical scope, helping the changes go live faster.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1">
+            <div class="asset"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.cloud.google.com/media.drewvosburg.com/Before.mp4" type="video/mp4"></video></div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-5">
+            <div class="asset"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.cloud.google.com/media.drewvosburg.com/After.mp4" type="video/mp4"></video></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3 ">
+            <div class="textbox">
+              <div class="rollcage">
+                <h2>Speed up</h2>
+                <p>Because of the scope of the new navigation, there were only a few pages that needed to transition technical frameworks.</p>
+                <p>As a result of the newly shared framework, page load times were dramatically reduced, making switching between tabs take far less time, smoothing out the experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-8 col-lg-offset-2">
+            <div class="rollcage">
+              <h2>Outcomes</h2>
+              <p>As a result of merging the tools for managing products and commerce, use of the tools increased across the board. There was an uplift in businesses setting up ads for the first time, as well as an uplift in businesses using insights, which is correlated with better ads performance and sales.</p>
+              <blockquote>
+                <p>"Overall it looks very strong. It is really like combining these two into a stronger platform."</p>
+                <p>- Lululemon</p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-8 col-lg-offset-2">
+            <div class="rollcage">
+              <h2>What would I do differently</h2>
+              <p>While we reduced the number of broader tools from five to three, there are still three tools. The result of inertia is that we have the same fundamental problem, slightly less aggravated, but with significantly more business users. Instead of building a plane in the air, it would have been a good investment to push harder for even more aggressive platform consolidation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-5">
+          <div class="leftbox">
+            <p>Thanks for taking the time to scroll all the way down here. Time is precious, and I'm grateful that you spent some looking at my&nbsp;work&nbsp;today.</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-2">
+          <div class="rightbox">
+            <h4>Get in touch</h4>
+            <a href="mailto:drew.vosburg@gmail.com">drew.vosburg@gmail.com</a> <br>
+            <a href="tel:17652748922">(765) 274-8922</a>
+            <h5><a href="https://dribbble.com/drewvosburg" target="_blank">Dribbble</a> &nbsp; |  &nbsp; <a href="https://twitter.com/drewvosburg" target="_blank">Twitter</a> &nbsp; |  &nbsp; <a href="https://youtube.com/drewvosburg" target="_blank">YouTube</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+  <!-- HIDE SECTIONS FOR SCROLL REVEALS -->
+  <script type="text/javascript">
+    var triggerPoint = window.innerHeight * .75;
+    var rollcages = document.getElementsByClassName('rollcage');
+    var scrollTop = document.documentElement.scrollTop;
+
+    function getRollcages() {
+      for (var i = 0; i < rollcages.length; i++) {
+        if (rollcages[i].getBoundingClientRect().top > window.innerHeight) {
+          rollcages[i].classList.add('hidden','animate');
+        }
+      }
+      rollcages = document.getElementsByClassName('rollcage hidden');
+    }
+
+    window.onload = function(){
+      getRollcages();
+    }
+
+    /* SCROLL EVENT */
+    window.onscroll = function(){
+      for (var i = 0; i < rollcages.length; i++) {
+        if (rollcages[i].getBoundingClientRect().top < scrollTop + triggerPoint) {
+          rollcages[i].classList.remove('hidden');
+        }
+      }
+    }
+  </script>
+</body>
+
+<!--
+
+      /\
+   __/\/\__     THAT'S ALL, FOLKS!
+ /__/\!!/\__\
+ \ -\/!!\/- /   You may notice that the overall page structure is 
+    -\/\/-      pretty straightforward. That is on purpose, I try
+      \/        to put the styling in the CSS and structure the
+                content in HTML.
+-->
+</html>
