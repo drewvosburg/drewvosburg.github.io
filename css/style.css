@@ -1573,7 +1573,6 @@ main.case-study#voice-search {
   background: #0071BB;
   box-shadow: 0 1.2rem 0 #4AA464, 1.2rem 0 0 #E31C3D, 1.2rem 1.2rem 0 #504755;
 }
-}
 @media only screen and (min-width: 48em) {
   #mirs .flourish .circles {
     box-shadow: 0 1.375rem 0 #E31C3D, 0 2.75rem 0 #4AA464, 0 4.125rem 0 #0071BB;
@@ -1588,7 +1587,6 @@ main.case-study#voice-search {
   background: #1877F2;
   box-shadow: 0 1.2rem 0 #63BE09, 1.2rem 0 0 #D93616, 1.2rem 1.2rem 0 #404040;
 }
-}
 @media only screen and (min-width: 48em) {
   #guidance .flourish .circles {
     box-shadow: 0 1.375rem 0 #D93616, 0 2.75rem 0 #63BE09, 0 4.125rem 0 #1877F2;
@@ -1602,7 +1600,6 @@ main.case-study#voice-search {
 #catalog .diamond.mark:before {
   background: #1877F2;
   box-shadow: 0 1.2rem 0 #63BE09, 1.2rem 0 0 #D93616, 1.2rem 1.2rem 0 #404040;
-}
 }
 @media only screen and (min-width: 48em) {
   #catalog .flourish .circles {
