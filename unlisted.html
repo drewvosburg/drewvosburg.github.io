@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<!--
+      ___           ___           ___       ___       ___     
+     /\__\         /\  \         /\__\     /\__\     /\  \    
+    /:/  /        /::\  \       /:/  /    /:/  /    /::\  \   
+   /:/__/        /:/\:\  \     /:/  /    /:/  /    /:/\:\  \  
+  /::\  \ ___   /::\~\:\  \   /:/  /    /:/  /    /:/  \:\  \ 
+ /:/\:\  /\__\ /:/\:\ \:\__\ /:/__/    /:/__/    /:/__/ \:\__\
+ \/__\:\/:/  / \:\~\:\ \/__/ \:\  \    \:\  \    \:\  \ /:/  /
+      \::/  /   \:\ \:\__\    \:\  \    \:\  \    \:\  /:/  / 
+      /:/  /     \:\ \/__/     \:\  \    \:\  \    \:\/:/  /  
+     /:/  /       \:\__\        \:\__\    \:\__\    \::/  /   
+     \/__/         \/__/         \/__/     \/__/     \/__/    
+
+    THANKS FOR LOOKING AT MY SOURCE CODE!
+
+    I've highlighted what I think are the most interesting
+    bits of my code with this symbol:
+
+          /\
+       __/\/\__
+     /__/\!!/\__\
+     \ -\/!!\/- /
+        -\/\/-
+          \/
+
+    Scroll down, and enjoy!
+ -->
+
+<head>
+  <!-- Some dumb basic meta junk -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="Product Designer and Web Developer">
+  <link rel="canonical" href="https://www.drewvosburg.com/">
+  <link rel="shortlink" href="https://www.drewvosburg.com/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Page title that shows up in tabs etc -->
+  <title>Drew Vosburg [UNLISTED]</title>
+
+  <!-- DNS Prefetch to speed up page load -->
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//storage.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+  <!-- Core style links -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <!--                                                  ^
+                                                        |
+          /\                                            |
+       __/\/\__     ____________________________________|
+     /__/\!!/\__\
+     \ -\/!!\/- /   THIS IS MY MAIN STYLE SHEET
+        -\/\/-  
+          \/        Almost all of my favorite stuff on
+                    this site is in this file!
+-->
+
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Drew Vosburg">
+  <meta property="og:description" content="Product Designer and Web Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.drewvosburg.com/">
+  <meta property="og:site_name" content="Drew Vosburg">
+  <meta property="og:image" content="https://storage.googleapis.com/media.drewvosburg.com/card-image.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@drewvosburg">
+  <meta name="twitter:title" content="Drew Vosburg">
+  <meta name="twitter:description" content="Product Designer and Web Developer">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="home-link" href="/">
+            <div class="diamond mark"></div> Drew Vosburg
+          </a>
+          <nav>
+            <a href="#work">Work</a>
+            <a href="resume">Resume</a>
+            <a class="contact button" href="mailto:drew.vosburg@gmail.com">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <div class="flourish north west">
+          <div class="cropmarks"></div>
+          <div class="circles"></div>
+        </div>
+        <div class="flourish north east">
+          <div class="cropmarks"></div>
+          <div class="pagelabel">Drew Vosburg Portfolio [UNLISTED] &nbsp; | &nbsp; page 2</div>
+        </div>
+
+<!--                                ^
+                                    |
+      /\                            |
+   __/\/\__     ____________________|
+ /__/\!!/\__\
+ \ -\/!!\/- /   THESE ARE THE CORNER DECORATIONS
+    -\/\/-  
+      \/        I tried to be a little fancy with the CSS here.
+                The CSS classes "north", "south", "east", and
+                "west" affect positioning and (for the crop marks)
+                even shape!
+-->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-6 col-lg-offset-1">
+            <h1><a href="./resume">Drew Vosburg</a></h1>
+            <h4>Product Designer</h4>
+            <a class="button big" href="mailto:drew.vosburg@gmail.com">Get in touch</a>
+          </div>
+
+          <div class="col-xs-12 last-sm first-xs col-sm-6 col-lg-4">
+            <div class="coin">
+              <div class="profile-picture front">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAwJCQsJCAwLCgsODQwPEx8UExEREyYbHRcfLSgwLywoLCsyOEg9MjVENissPlU/REpMUFFQMDxYXldOXkhPUE3/2wBDAQ0ODhMQEyUUFCVNMywzTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU3/wgARCABAAEADAREAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAwQCBQYBAAf/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/2gAMAwEAAhADEAAAAMflK4dpOxYGBIsU/AswLOta6OmgcVjh2ZXBtizAUtxG0aWFItIlUH21gHutH1YI6KvxsXn6zBQadh+nO86sKya7DFxb2GYQdJY5052XVhVzXpG+DonAo2sxnsyjc9A0oXBvAJNgDfLb5z2cm6y6MlKaygof/8QAOxAAAgECBAIHBAkCBwAAAAAAAgMEABIBEyIyBRQRIzFBQlJxBiFRgTNDYWJykcHR8LHhFSREU5Ky8f/aAAgBAQABPwALUpS5UTXmiVzC3en69NOMCdaesrcbbvP5fSoKmrMx2Hp1XVGInONKuu0XW27tOOFC1qQjOYdjQI1DcPw7P/aRCdMkpEQ0t6dpbSo0HFjJTYDkZuFw/WKPv/ejflmEN5hmvPTd9UN386Kep7ASl/jD/L/hv7qnsWZ6g61BDl3eIPf2/rQS5c6RncqEgyViIgsbcvCvZvgyj9nUkUp8ee0zJYr8XR4ffhjhXFxk9Smeh99/VkRXXdFIeanBMUGSBGA2+Yv2qCpnPgx+5tzGD6+H1qW0XRQYW6+38Pfb+tWsnHKmSUBmjZk27RwoEC5M+VIyDyvCW7VtLD4+lQ5MmNKcMcAAnjpES09NeznNxuDJSvm7w33FoEcS7x7a9ruFEWTOb12jEMi7VdgPdQSHjMMCXq1XL29tcM2T5kxASSDUQt83m/SuIqEY0W6y89QivyduHr8/fQRuVSE2XLzmnaWWvbZ3/OjbGmHbNDl7bmAW24cfj0fb7sKiDyruYJ4G0dWWOrd+1c8+B1kaWYN2l4rvWny5Ljzpjzcdmm7wjUyTz0U26M9QWkX3McffXCQJ09MW+xTdbPw1O4YqKYMz70PPcI7R+0aASWZpWFgmdo3F8O0awFbM5YmADdpGo2WMAy+tI8B/tSibIMyILFKriEzO6sa4QWZYsvHcv88KWXLlGIr0kozG4f6fOs9iwOZfoMMUEjy+tSnkwwETC1un7q+nox0fb0/lRtNen/a1r+ff86xAXwE5QWZrfD5qnSdBpv6oN1viooxfSM3F4f53fbXD0W9cO3w0DWlJzkIvA5GrTcupmWo3xR/1MoSFdvh6KiTFCBrLf7hXUMCdMy2HkkCsdVt3Z2VGVJ/wPmlhepD9ReEen40TZaw2Bb5qUmTPExjQTcf3BMvz/vUkhh2RfGG4i83fRS2wD5eM8wVfjdquEqOO+UGZf9AX/L0xqJy42HJWBqDpIi83z/p3USDznDsaoCFg7v501BmcLT7LnGUYWvHXnWgezdjhhQtLN2a91ezvH+F8HB5X9e0Ndv8A1HCuJTQ4lPPiBHY023CjK0iHr30ZRkplCJhYahIV/e/eozVLNPLPPld5CQ/RF69/TX//xAAcEQACAQUBAAAAAAAAAAAAAAAAAgEDEBESISD/2gAIAQIBAT8A9ML4m7C3xklJFpzIyajC3oxkmmRThSomRhb0rbcEYcgggp214Io5F0fgsjPmej1dY5536RPB52ng0Yjt/wD/xAAcEQADAAIDAQAAAAAAAAAAAAAAAQIgIQMQERL/2gAIAQMBAT8A6ZCGs+NHIicosuxPGxWOyHjYiSsbESVjc+sa0QvBR9PeKn1FLZxR8rY9vXf/2Q==" class="photo blur">
+<!--                      ^
+                          |
+      /\                  |
+   __/\/\__     __________|
+ /__/\!!/\__\
+ \ -\/!!\/- /   THIS SEEMS INEFFICIENT
+    -\/\/-  
+      \/        This is a Base64 encoded 64px version of my
+                profile picture, which is covered by the full
+                res image when it loads!
+-->
+                <img src="https://storage.googleapis.com/media.drewvosburg.com/profile%20picture.jpg" class="photo">
+              </div>
+              <div class="profile-video back">
+                <video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/profile.mp4" type="video/mp4"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="statement">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-8 col-lg-offset-2">
+            <div class="rollcage">
+              <h2>Welcome to the back room.</h2>
+              <p>These case studies are more sensitive than those on my main portfolio page.</p>
+              <p>I have hidden these product design case studies to prevent legal issues with having them easily accessible.</p>
+              <p>Please don't share these widely.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="case-studies" id="work">
+      <div class="diamond mark"></div>
+      <h2>Case studies</h2>
+      <div class="container">
+        <div class="case-study">
+          <div class="mask">
+            <div class="logo"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                  <h2>Facebook Guidance Platform</h2>
+                  <h4>Senior Product Designer, Associate Project Manager</h4>
+                  <h5>September 2021 - June 2021<br>
+                  Seattle, WA</h5>
+                  <p>At one of the largest tech companies in the world, I helped sellers on the Facebook commerce platform navigate what to do next.</p>
+                  <div class="center"><a class="button medium" href="./case-study/guidance">See more</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case-study">
+          <div class="mask">
+            <div class="logo"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                  <h2>Facebook Commerce and Ad Catalog merger</h2>
+                  <h4>Senior Product Designer</h4>
+                  <h5>March 2020 - August 2020<br>
+                  Seattle, WA</h5>
+                  <p>While at Facebook, I merged two critical business-facing tools into one, simplifying and strengthening the Facebook commerce experience.</p>
+                  <div class="center"><a class="button medium" href="./case-study/catalog-and-commerce">See more</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case-study">
+          <div class="mask">
+            <div class="logo"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                  <h2>Military Entrance Software</h2>
+                  <h4>Web Developer and Experience Designer</h4>
+                  <h5>July 2018 – July 2019<br>
+                  Chicago, IL</h5>
+                  <p>For United States Military Entrance, I helped to develop interfaces and standards for a next generation digital system to help the military assess applicants.</p>
+                  <div class="center"><a class="button medium" href="./case-study/mirs">See more</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="other-work">
+      <div class="stripes mark"></div>
+      <h2>Other work</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><a href="https://dribbble.com/shots/2732659-Data-Spaces" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/data-spaces.mp4" type="video/mp4"></video></a></div>
+          <div class="col-xs-12 col-sm-6 col-lg-5"><a href="https://dribbble.com/shots/2362104-Onboarding-Day-023" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/onboarding.mp4" type="video/mp4"></video></a></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><a href="https://dribbble.com/shots/2350348-Leaderboard-Day-019" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/leaderboard.mp4" type="video/mp4"></video></a></div>
+          <div class="col-xs-12 col-sm-6 col-lg-5"><a href="https://dribbble.com/shots/2402082-Blog-Post-Day-035" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/blog.mp4" type="video/mp4"></video></a></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><a href="https://dribbble.com/shots/2318540-Settings-Day-007" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/wifi-settings.mp4" type="video/mp4"></video></a></div>
+          <div class="col-xs-12 col-sm-6 col-lg-5"><a href="https://dribbble.com/shots/2407778-Special-Offer-Day-036" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/special-offer.mp4" type="video/mp4"></video></a></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1"><a href="https://dribbble.com/shots/2351984-Location-Tracker-Day-020" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/location-tracking.mp4" type="video/mp4"></video></a></div>
+          <div class="col-xs-12 col-sm-6 col-lg-5"><a href="https://dribbble.com/shots/2331075-Simple-Siri-for-Chrome" target="_blank"><video autoplay loop muted webkit-playsinline playsinline>
+  <source src="https://storage.googleapis.com/media.drewvosburg.com/simple-siri.mp4" type="video/mp4"></video></a></div>
+        </div>
+
+        <div class="flourish south west">
+          <div class="cropmarks"></div>
+          <div class="registration"><div class="target"></div></div>
+          <div class="swatches"></div>
+        </div>
+        <div class="flourish south east">
+          <div class="cropmarks"></div>
+          <div class="registration color"><div class="target"></div></div>
+<!--                                ^
+                                    |
+      /\                            |
+   __/\/\__     ____________________|
+ /__/\!!/\__\
+ \ -\/!!\/- /   REMEMBER THOSE LITTLE TARGETS?
+    -\/\/-  
+      \/        The corner decorations are all built with CSS in the DOM.
+                This allows me to ensure that those little hash marks are
+                perfectly pixel aligned. The "targets" (registration marks)
+                in the corners also share a class, but a secondary class
+                changes them to color and modifies the size and "+" lines
+                slightly to help the icon be stronger visually.
+-->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-5">
+          <div class="leftbox">
+            <p>Thanks for taking the time to scroll all the way down here. Time is precious, and I'm grateful that you spent some looking at my&nbsp;work&nbsp;today.</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-2">
+          <div class="rightbox">
+            <h4>Get in touch</h4>
+            <a href="mailto:drew.vosburg@gmail.com">drew.vosburg@gmail.com</a> <br>
+            <a href="tel:17652748922">(765) 274-8922</a>
+            <h5><a href="https://dribbble.com/drewvosburg" target="_blank">Dribbble</a> &nbsp; |  &nbsp; <a href="https://twitter.com/drewvosburg" target="_blank">Twitter</a> &nbsp; |  &nbsp; <a href="https://youtube.com/drewvosburg" target="_blank">YouTube</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+  <!-- HIDE SECTIONS FOR SCROLL REVEALS -->
+  <script type="text/javascript">
+    var triggerPoint = window.innerHeight * .75;
+    var cardTriggerPoint = window.innerHeight * 1;
+    var rollcages = document.getElementsByClassName('rollcage');
+    var caseStudies = document.getElementsByClassName('case-study');
+
+    function getRollcages() {
+      for (var i = 0; i < rollcages.length; i++) {
+        if (rollcages[i].getBoundingClientRect().top > window.innerHeight) {
+          rollcages[i].classList.add('hidden','animate');
+        }
+      }
+      rollcages = document.getElementsByClassName('rollcage hidden');
+    }
+    function getCaseStudies() {
+      for (var i = 0; i < caseStudies.length; i++) {
+        if (caseStudies[i].getBoundingClientRect().top > window.innerHeight) {
+          caseStudies[i].classList.add('hidden','animate');
+        }
+      }
+      caseStudies = document.getElementsByClassName('case-study hidden');
+    }
+
+    window.onload = function(){
+      getRollcages();
+      getCaseStudies();
+    }
+
+    /* SCROLL EVENT */
+    window.onscroll = function(){
+      for (var i = 0; i < rollcages.length; i++) {
+        if (rollcages[i].getBoundingClientRect().top < triggerPoint) {
+          rollcages[i].classList.remove('hidden');
+        }
+      }
+      for (var i = 0; i < caseStudies.length; i++) {
+        if ((caseStudies[i].getBoundingClientRect().bottom < cardTriggerPoint) || (caseStudies[i].getBoundingClientRect().top < cardTriggerPoint *.25)) {
+          caseStudies[i].classList.remove('hidden');
+        }
+      }
+    }
+  </script>
+</body>
+
+<!--
+
+      /\
+   __/\/\__       THAT'S ALL, FOLKS!
+ /__/\!!/\__\
+ \ -\/!!\/- /     You may notice that the overall page structure is 
+    -\/\/-        pretty straightforward. That is on purpose, I try
+      \/          to put the styling in the CSS and structure the
+                  content in HTML.
+-->
+</html>
