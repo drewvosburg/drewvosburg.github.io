@@ -189,6 +189,7 @@ a.button {
   background: #00D9C0;
   letter-spacing: 0.03125rem;
   text-transform: uppercase;
+  border-radius: 0.5rem;
 }
 a.button:after {
   content: ' \00279E';
