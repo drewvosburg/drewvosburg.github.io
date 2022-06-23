@@ -974,6 +974,14 @@ section {
   background-image: url('https://storage.googleapis.com/media.drewvosburg.com/voice-cutout.svg');
 }
 
+#home .case-study.guidance {
+  background: #07c5f9;
+  background: -moz-linear-gradient(-45deg,  #07c5f9 0%, #3251ff 33%, #2162ef 65%, #712ae2 100%);
+  background: -webkit-linear-gradient(-45deg,  #07c5f9 0%,#3251ff 33%,#2162ef 65%,#712ae2 100%);
+  background: linear-gradient(135deg,  #07c5f9 0%,#3251ff 33%,#2162ef 65%,#712ae2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07c5f9', endColorstr='#712ae2',GradientType=1 );
+}
+
 #home .case-study {
   background: #6B7995;
   background-position: center;
