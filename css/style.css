@@ -914,7 +914,12 @@ section {
   display: block;
 }
 #home .other-work {
-  padding-bottom: 7.5rem;
+  padding-bottom: 7.5rem; 
+  text-align: center;
+}
+#home .other-work a.button {
+  background: #04060A;
+  margin-bottom: 4rem;
 }
 #home .case-studies > h2, #home .other-work > h2 {
   margin-bottom: 3rem;
