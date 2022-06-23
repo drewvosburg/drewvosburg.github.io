@@ -190,7 +190,7 @@ a.button {
   letter-spacing: 0.03125rem;
   text-transform: uppercase;
   border-radius: 0.5rem;
-  box-shadow: 0 0.025em 0.05em 0 rgba(4,6,10,0.25), 0 0.1em 0.5em 0 rgba(4,6,10,0.25);
+  box-shadow: 0 0.025em 0.05em 0 rgba(4,6,10,0.2), 0 0.1em 0.5em 0 rgba(4,6,10,0.2);
 }
 a.button:after {
   content: ' \00279E';
