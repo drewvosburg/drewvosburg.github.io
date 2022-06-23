@@ -994,11 +994,14 @@ section {
 }
 
 #home .case-study.guidance {
-  background: #07c5f9;
-  background: -moz-linear-gradient(-45deg,  #07c5f9 0%, #3251ff 33%, #2162ef 65%, #712ae2 100%);
-  background: -webkit-linear-gradient(-45deg,  #07c5f9 0%,#3251ff 33%,#2162ef 65%,#712ae2 100%);
-  background: linear-gradient(135deg,  #07c5f9 0%,#3251ff 33%,#2162ef 65%,#712ae2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07c5f9', endColorstr='#712ae2',GradientType=1 );
+  background-image: linear-gradient(135deg,  #07c5f9 0%,#3251ff 33%,#2162ef 65%,#712ae2 100%);
+}
+#home .case-study.catalog {
+  background-image: linear-gradient(135deg,  #395160 0%,#3f4c6b 27%,#3f4c6b 71%,#413d68 98%);
+}
+#home .case-study.mirs {
+  background: linear-gradient(135deg,  #312833 0%,#453c49 30%,#504755 72%,#3e3a5b 100%);
+
 }
 
 #home .case-study.card {
