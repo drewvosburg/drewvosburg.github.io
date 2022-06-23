@@ -809,6 +809,9 @@ section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#home .statement.dark {
+  background: #04060A;
+}
 #home .statement h2 {
   margin-bottom: 1.5rem;
 }
@@ -982,6 +985,9 @@ section {
   margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
+}
+#home .case-study.card {
+  border-radius: 2rem;
 }
 #home .case-study:last-child {
   margin-bottom: 0;
