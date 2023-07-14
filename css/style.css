@@ -148,14 +148,14 @@ hr {
   }
   h2 {
     font-size: 2.94rem;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
     line-height: 1.15;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   h3 {
     font-size: 1.81rem;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
     line-height: 1.24;
   }
   h4 {
